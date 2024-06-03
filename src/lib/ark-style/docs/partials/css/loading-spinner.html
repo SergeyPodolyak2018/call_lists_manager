@@ -1,0 +1,77 @@
+<p class="lead">This is the spinner to indicate loading status. It is purely written in css.</p>
+
+<h3 class="secondary-header" id="default-spinner">Default Spinner</h3>
+
+<p>The default spinner is a 50px * 50px sized css animated spinner. It is commonlly used to login components or some other panels.</p>
+
+<div ng-include="'default-spinner.html'" class="bs-example"></div>
+
+<div hljs include="'default-spinner.html'" language="html"></div>
+
+
+<h3 class="secondary-header" id="dark-spinner">Spinner on Dark Background</h3>
+
+<p>It can also be used in a dark background.</p>
+
+<div ng-include="'dark-spinner.html'" class="bs-example" style="background-color: #33383D;"></div>
+
+<div hljs include="'dark-spinner.html'" language="html"></div>
+
+
+<h3 class="secondary-header" id="fast-spinner">Fast Spinner</h3>
+
+<p>The fast spinner class makes the animation finishes faster.</p>
+
+<div ng-include="'fast-spinner.html'" class="bs-example"></div>
+
+<div hljs include="'fast-spinner.html'" language="html"></div>
+
+
+<h3 class="secondary-header" id="input-spinner">Input Spinner</h3>
+
+<p>The input spinner is a 20px * 20px sized css animated spinner. It should be used within a input text field.</p>
+
+<div class="bs-example">
+  <div style="position:relative; width: 280px">
+    <input type="text" class="form-control" value="Searching for something">
+    <div ng-include="'input-spinner.html'"></div>
+  </div>
+</div>
+
+<div hljs include="'input-spinner.html'" language="html"></div>
+
+<div class="bs-callout bs-callout-danger">
+  <h4>Internet Explorer Compatibility</h4>
+  <p>Since this is using CSS3 animation, it does not support IE9 and below.</p>
+</div>
+
+
+<!-- Templates -->
+
+<script type="text/ng-template" id="default-spinner.html">
+<div class="spinner-container">
+    <div class="spin-circle"></div>
+    <div class="spin-inner-circle"></div>
+</div>
+</script>
+
+<script type="text/ng-template" id="dark-spinner.html">
+<div class="spinner-container dark-background">
+    <div class="spin-circle"></div>
+    <div class="spin-inner-circle"></div>
+</div>
+</script>
+
+<script type="text/ng-template" id="fast-spinner.html">
+<div class="spinner-container fast-spinner">
+    <div class="spin-circle"></div>
+    <div class="spin-inner-circle"></div>
+</div>
+</script>
+
+<script type="text/ng-template" id="input-spinner.html">
+<div class="spinner-container input-spinner" style="position: absolute; top: 8px; right: 8px;">
+    <div class="spin-circle"></div>
+    <div class="spin-inner-circle"></div>
+</div>
+</script>

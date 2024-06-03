@@ -1,0 +1,468 @@
+<h3 class="secondary-header" id="forms-example">Basic example</h3>
+
+<p>Individual form controls automatically receive some global styling. All textual <code>&lt;input&gt;</code>, <code>&lt;textarea&gt;</code>, and <code>&lt;select&gt;</code> elements with <code>.form-control</code> are set to <code>width: 100%;</code> by default. Wrap labels and controls in <code>.form-group</code> for optimum spacing.</p>
+
+<div ng-include="'form-basic-example.html'" class="bs-example"></div>
+
+<div hljs include="'form-basic-example.html'" language="html"></div>
+
+<div class="bs-callout bs-callout-warning">
+  <h4>Don't mix form groups with input groups</h4>
+  <p>Do not mix form groups directly with <a href="/components/#input-groups">input groups</a>. Instead, nest the input group inside of the form group.</p>
+</div>
+
+
+<h3 class="secondary-header" id="forms-inline">Inline form</h3>
+
+<p>Add <code>.form-inline</code> to your <code>&lt;form&gt;</code> for left-aligned and inline-block controls. <strong>This only applies to forms within viewports that are at least 768px wide.</strong></p>
+
+<div class="bs-callout bs-callout-danger">
+  <h4>Requires custom widths</h4>
+  <p>Inputs, selects, and textareas are 100% wide by default in Ark. To use the inline form, you'll have to set a width on the form controls used within.</p>
+</div>
+
+<div class="bs-callout bs-callout-warning">
+  <h4>Always add labels</h4>
+  <p>Screen readers will have trouble with your forms if you don't include a label for every input. For these inline forms, you can hide the labels using the <code>.sr-only</code> class.</p>
+</div>
+
+<div ng-include="'form-inline.html'" class="bs-example"></div>
+
+<div hljs include="'form-inline.html'" language="html"></div>
+
+
+<h3 class="secondary-header" id="forms-horizontal">Horizontal form</h3>
+
+<p>Use Ark's predefined grid classes to align labels and groups of form controls in a horizontal layout by adding <code>.form-horizontal</code> to the form. Doing so changes <code>.form-group</code>s to behave as grid rows, so no need for <code>.row</code>.</p>
+
+<div ng-include="'form-horizontal.html'" class="bs-example"></div>
+
+<div hljs include="'form-horizontal.html'" language="html"></div>
+
+
+<h3 class="secondary-header" id="forms-inputs">Inputs</h3>
+
+<p>Most common form control, text-based input fields. Includes support for all HTML5 types: <code>text</code>, <code>password</code>, <code>datetime</code>, <code>datetime-local</code>, <code>date</code>, <code>month</code>, <code>time</code>, <code>week</code>, <code>number</code>, <code>email</code>, <code>url</code>, <code>search</code>, <code>tel</code>, and <code>color</code>.</p>
+
+<div class="bs-callout bs-callout-danger">
+  <h4>Type declaration required</h4>
+  <p>Inputs will only be fully styled if their <code>type</code> is properly declared.</p>
+</div>
+
+<div ng-include="'form-inputs.html'" class="bs-example form"></div>
+
+<div hljs include="'form-inputs.html'" language="html"></div>
+
+<div class="bs-callout bs-callout-info">
+  <h4>Input groups</h4>
+  <p>To add integrated text or buttons before and/or after any text-based <code>&lt;input&gt;</code>, <a href="../components/#input-groups">check out the input group component</a>.</p>
+</div>
+
+
+<h3 class="secondary-header" id="forms-textarea">Textarea</h3>
+
+<p>Form control which supports multiple lines of text. Change <code>rows</code> attribute as necessary.</p>
+
+<div ng-include="'form-textarea.html'" class="bs-example form"></div>
+
+<div hljs include="'form-textarea.html'" language="html"></div>
+
+
+<h3 class="secondary-header" id="search-input">Search Input</h3>
+
+<p>Custom search input field with optional icons. The <code>input</code> and <code>span</code> elements must be wrapped in the <code>.input-container</code> class.</p>
+
+<div ng-include="'form-search-input1.html'" class="bs-example"></div>
+
+<div hljs include="'form-search-input1.html'" language="html"></div>
+
+<p>The icons can be omitted from the seach input by excluding their respective spans. Be sure to also remove the appropriate class name in the input to remove the padding.</p>
+
+<div ng-include="'form-search-input2.html'" class="bs-example"></div>
+
+<div hljs include="'form-search-input2.html'" language="html"></div>
+
+
+<h3 class="secondary-header" id="forms-checkboxes">Checkboxes and radios</h3>
+
+<p>Checkboxes are for selecting one or several options in a list while radios are for selecting one option from many.</p>
+
+<h4>Default (stacked)</h4>
+
+<div ng-include="'form-checkbox-radio.html'" class="bs-example form"></div>
+
+<div hljs include="'form-checkbox-radio.html'" language="html"></div>
+
+<div class="bs-callout bs-callout-warning">
+  <h4>When to add <code>span</code> after <code>input</code></h4>
+  <p>If you are dynamically adding <code>input</code> through javascript, you MUST add <code>span</code> tag after <code>input</code>. Otherwise, adding empty <code>span</code> is optional</p>
+</div>
+
+<h4>Inline Checkboxes</h4>
+
+<p>Use the <code>.checkbox-inline</code> or <code>.radio-inline</code> classes on a series of checkboxes or radios for controls that appear on the same line.</p>
+
+<div ng-include="'form-inline-checkbox.html'" class="bs-example"></div>
+
+<div hljs include="'form-inline-checkbox.html'" language="html"></div>
+
+<h4>Multi State Checkboxes</h4>
+
+<p>Use the <code>.ark-checkbox-multi-state</code> class to define a multi state checkbox (uncheck, check, indeterminate).</p>
+
+<div class="bs-callout bs-callout-warning">
+  <p>Please note that you will be required to implement the logic to handle each state on your side using JavaScript, this only provides a group of CSS classes to use.</p>
+  <p>For instance, if you are using AngularJS, you could use <code>ng-class</code> to toggle between <code>ark-checkbox-check</code>, <code>ark-checkbox-uncheck</code> and <code>ark-checkbox-indeterminate</code>.</p>
+</div>
+
+<div ng-include="'form-multi-state.html'" class="bs-example"></div>
+
+<div hljs include="'form-multi-state.html'" language="html"></div>
+
+
+<h3 class="secondary-header" id="forms-selects">Selects</h3>
+
+<p>Note that in some browsers, native <code>select</code> rounded corners that cannot be modified via <code>border-radius</code> properties.</p>
+
+<div ng-include="'form-select-single.html'" class="bs-example"></div>
+
+<div hljs include="'form-select-single.html'" language="html"></div>
+
+<p>For <code>select</code> controls with the multiple attribute, <code>multiple</code> options are shown by default.</p>
+
+<div ng-include="'form-select-multiple.html'" class="bs-example"></div>
+
+<div hljs include="'form-select-multiple.html'" language="html"></div>
+
+
+<div class="tbd-subsection">
+
+  <h3 class="secondary-header" id="forms-control-disabled">Disabled inputs <span class="tbd-tag"> ---Not Supported Yet</span></h3>
+
+  <p>Add the <code>disabled</code> attribute on an input to prevent user input and trigger a slightly different look.</p>
+
+  <div class="bs-example">
+    <form role="form" ng-include="'form-disabled-inputs.html'"></form>
+  </div>
+
+  <div hljs include="'form-disabled-inputs.html'" language="html"></div>
+
+  <h4>Disabled fieldsets</h4>
+
+  <p>Add the <code>disabled</code> attribute to a <code>&lt;fieldset&gt;</code> to disable all the controls within the <code>&lt;fieldset&gt;</code> at once.</p>
+
+  <div class="bs-callout bs-callout-warning">
+    <h4>Link functionality of <code>&lt;a&gt;</code> not impacted</h4>
+    <p>This class will only change the appearance of <code>&lt;a class="btn btn-default"&gt;</code> buttons, not their functionality. Use custom JavaScript to disable links here.</p>
+  </div>
+
+  <div class="bs-callout bs-callout-danger">
+    <h4>Cross-browser compatibility</h4>
+    <p>While Ark will apply these styles in all browsers, Internet Explorer 9 and below don't support the <code>disabled</code> attribute on a <code>&lt;fieldset&gt;</code>. Use custom JavaScript to disable the fieldset in these browsers.</p>
+  </div>
+
+  <div ng-include="'form-disabled.html'" class="bs-example">  </div>
+
+  <div hljs include="'form-disabled.html'" language="html"></div>
+
+</div>
+
+
+<h3 class="secondary-header" id="forms-control-validation">Validation states</h3>
+
+<p>Ark includes validation styles for error state on form controls. To use, add <code>.has-error</code> to the parent element. Any <code>.control-label</code>, <code>.form-control</code>, and <code>.help-block</code> within that element will receive the validation styles.</p>
+
+<div class="bs-example">
+  <form role="form" ng-include="'form-validation-states.html'"></form>
+</div>
+
+<div hljs include="'form-validation-states.html'" language="html"></div>
+
+<h4>With optional error message and/or icon</h4>
+
+<p>You can also add optional feedback message and/or icon for error state.  To use, add <code>.has-feedback</code> to the parent element.  The error message and/or icon should be inside a <code>.form-control-feedback</code> class declared after the element.</p>
+
+<div class="bs-example">
+  <form role="form" ng-include="'form-validation-error.html'"></form>
+</div>
+
+<div hljs include="'form-validation-error.html'" language="html"></div>
+
+<p>Optional icons also work on horizontal and inline forms.</p>
+
+<div ng-include="'form-validation-horizontal.html'" class="bs-example"></div>
+
+<div hljs include="'form-validation-horizontal.html'" language="html"></div>
+
+<div ng-include="'form-validation-inline.html'" class="bs-example"></div>
+
+<div hljs include="'form-validation-inline.html'" language="html"></div>
+
+
+<h3 class="secondary-header" id="forms-help-text">Help text</h3>
+
+<p>Block level help text for form controls.</p>
+
+<div class="bs-example">
+  <form role="form">
+    <input type="text" class="form-control">
+    <div ng-include="'form-help-text.html'"></div>
+  </form>
+</div>
+
+<div hljs include="'form-help-text.html'" language="html"></div>
+
+
+<!-- Templates -->
+
+<script type="text/ng-template" id="form-basic-example.html">
+<form role="form">
+    <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputPassword1">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputFile">File input</label>
+        <input type="file" id="exampleInputFile">
+        <p class="help-block">Example block-level help text here.</p>
+    </div>
+    <div class="checkbox">
+        <label>
+            <input type="checkbox" class="ark-checkbox"><span></span>Check me out
+        </label>
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+</form>
+</script>
+
+<script type="text/ng-template" id="form-inline.html">
+<form class="form-inline" role="form">
+    <div class="form-group">
+        <label class="sr-only" for="exampleInputEmail2">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter email">
+    </div>
+    <div class="form-group">
+        <label class="sr-only" for="exampleInputPassword2">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password">
+    </div>
+    <div class="checkbox">
+        <label>
+            <input type="checkbox" class="ark-checkbox"><span></span>Remember me
+        </label>
+    </div>
+    <button type="submit" class="btn btn-default">Sign in</button>
+</form>
+</script>
+
+<script type="text/ng-template" id="form-horizontal.html">
+<form class="form-horizontal" role="form">
+    <div class="form-group">
+        <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+        <div class="col-sm-10">
+            <input type="email" class="form-control" id="inputEmail3">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+        <div class="col-sm-10">
+            <input type="password" class="form-control" id="inputPassword3">
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" class="ark-checkbox"><span></span>Remember me
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit" class="btn btn-default">Sign in</button>
+        </div>
+    </div>
+</form>
+</script>
+
+<script type="text/ng-template" id="form-inputs.html">
+<input type="text" class="form-control" placeholder="Text input">
+</script>
+
+<script type="text/ng-template" id="form-textarea.html">
+<textarea class="form-control" rows="3"></textarea>
+</script>
+
+<script type="text/ng-template" id="form-search-input1.html">
+<div class="input-container">
+    <input type="text" class="form-control has-left-icon has-right-icon" placeholder="Search">
+    <span class="icon-search input-box-left-icon"></span>
+    <span class="icon-close input-box-right-icon" ></span>
+</div>
+</script>
+
+<script type="text/ng-template" id="form-search-input2.html">
+<div class="input-container">
+    <input type="text" class="form-control has-left-icon" placeholder="Search">
+    <span class="icon-search input-box-left-icon"></span>
+</div>
+<br>
+<div class="input-container">
+    <input type="text" class="form-control has-right-icon" placeholder="Search">
+    <span class="icon-close input-box-right-icon"></span>
+</div>
+</script>
+
+<script type="text/ng-template" id="form-checkbox-radio.html">
+<div class="checkbox">
+    <label>
+        <input type="checkbox" class="ark-checkbox"><span></span>Option one is this and that&mdash;be sure to include why it's great
+    </label>
+</div>
+<br>
+<div class="radio">
+    <label>
+        <input type="radio" class="ark-radiobtn" name="optionsRadios" id="optionsRadios1" value="option1" checked><span></span>Option one is this and that&mdash;be sure to include why it's great
+    </label>
+</div>
+<div class="radio">
+    <label>
+        <input type="radio" class="ark-radiobtn" name="optionsRadios" id="optionsRadios2" value="option2"><span></span>Option two can be something else and selecting it will deselect option one
+    </label>
+</div>
+</script>
+
+<script type="text/ng-template" id="form-inline-checkbox.html">
+<label class="checkbox-inline">
+    <input type="checkbox" id="inlineCheckbox1" value="option1" class="ark-checkbox"><span></span> 1
+</label>
+<label class="checkbox-inline">
+    <input type="checkbox" id="inlineCheckbox2" value="option2" class="ark-checkbox"><span></span> 2
+</label>
+<label class="checkbox-inline">
+    <input type="checkbox" id="inlineCheckbox3" value="option3" class="ark-checkbox"><span></span> 3
+</label>
+</script>
+
+<script type="text/ng-template" id="form-multi-state.html">
+<div class="checkbox">
+    <label>
+        <input type="checkbox" class="ark-checkbox-multi-state ark-checkbox-check"><span></span>
+        Uncheck
+    </label>
+</div>
+<div class="checkbox">
+    <label>
+        <input type="checkbox" class="ark-checkbox-multi-state ark-checkbox-uncheck"><span></span>
+        Check
+    </label>
+</div>
+<div class="checkbox">
+    <label>
+        <input type="checkbox" class="ark-checkbox-multi-state ark-checkbox-indeterminate"><span></span>
+        Indeterminate
+    </label>
+</div>
+</script>
+
+<script type="text/ng-template" id="form-select-single.html">
+<select class="form-control">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+    <option>5</option>
+</select>
+</script>
+
+<script type="text/ng-template" id="form-select-multiple.html">
+<select multiple class="form-control">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+    <option>5</option>
+</select>
+</script>
+
+<script type="text/ng-template" id="form-disabled-inputs.html">
+<input class="form-control" id="disabledInput" type="text" placeholder="Disabled input here…" disabled>
+</script>
+
+<script type="text/ng-template" id="form-disabled.html">
+<form role="form">
+    <fieldset disabled>
+        <div class="form-group">
+            <label for="disabledTextInput">Disabled input</label>
+            <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
+        </div>
+        <div class="form-group">
+            <label for="disabledSelect">Disabled select menu</label>
+            <select id="disabledSelect" class="form-control">
+                    <option>Disabled select</option>
+            </select>
+        </div>
+        <div class="checkbox">
+            <label>
+                    <input type="checkbox"> Can't check this
+            </label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </fieldset>
+</form>
+</script>
+
+<script type="text/ng-template" id="form-validation-states.html">
+<div class="form-group has-error">
+    <label class="control-label" for="inputError1">Input with error</label>
+    <input type="text" class="form-control" id="inputError1">
+</div>
+</script>
+
+<script type="text/ng-template" id="form-validation-error.html">
+<div class="form-group has-error has-feedback">
+    <label class="control-label" for="inputError2">Input with error message</label>
+    <input type="text" class="form-control" id="inputError2">
+    <span class="form-control-feedback">Error message here</span>
+</div>
+<div class="form-group has-error has-feedback">
+    <label class="control-label" for="inputError3">Input with icon</label>
+    <input type="text" class="form-control" id="inputError3">
+    <span class="form-control-feedback"><span class="fonticon icon-alert-circle"></span></span>
+</div>
+<div class="form-group has-error has-feedback">
+    <label class="control-label" for="inputError4">Input with icon and error message</label>
+    <input type="text" class="form-control" id="inputError4">
+    <span class="form-control-feedback"><span class="fonticon icon-alert-circle"></span>Error message here</span>
+</div>
+</script>
+
+<script type="text/ng-template" id="form-validation-horizontal.html">
+<form class="form-horizontal" role="form">
+    <div class="form-group has-error has-feedback">
+        <label class="control-label col-sm-3" for="inputError5">Input with error</label>
+        <div class="col-sm-9">
+            <input type="text" class="form-control" id="inputError5">
+            <span class="form-control-feedback"><span class="fonticon icon-alert-circle"></span>Error message here</span>
+        </div>
+    </div>
+</form>
+</script>
+
+<script type="text/ng-template" id="form-validation-inline.html">
+<form class="form-inline" role="form">
+    <div class="form-group has-error has-feedback">
+        <label class="control-label" for="inputError6">Input with error</label>
+        <input type="text" class="form-control" id="inputError6">
+        <span class="form-control-feedback"><span class="fonticon icon-alert-circle"></span>Error message here</span>
+    </div>
+</form>
+</script>
+
+<script type="text/ng-template" id="form-help-text.html">
+<span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+</script>

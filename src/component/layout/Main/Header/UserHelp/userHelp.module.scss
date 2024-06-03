@@ -1,0 +1,23 @@
+@import '../../../../../styles/font_style.scss';
+@import '../../../../../styles/color.scss';
+.container {
+  width: 100%;
+  height: 40px;
+  background-color: transparent;
+  border-style: solid;
+  border-color: transparent;
+  display: flex;
+  align-items: center;
+  color: $white;
+  position: relative;
+  cursor: pointer;
+
+  &::after {
+    content: '|';
+    padding: 0 6.5px;
+  }
+  &::before {
+    content: '|';
+    padding: 0 6.5px;
+  }
+}

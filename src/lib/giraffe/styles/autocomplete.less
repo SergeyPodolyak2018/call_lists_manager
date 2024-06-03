@@ -1,0 +1,31 @@
+.ui-autocomplete-term {
+  font-weight: bold;
+  color: #222529;
+}
+.ui-autocomplete .ui-menu-item a {
+  color: #666f7a;
+}
+.ui-autocomplete {
+  background: @genesys-off-white;
+}
+.g-widget .ui-autocomplete {
+  z-index: 1003;
+}
+.g-field-autocomplete-clear {
+  .icon-close();
+  &:before {
+    top: 9px;
+    right: 12px;
+    position: absolute;
+    display: none;
+    color: #b9c2cc;
+  }
+}
+.g-field-autocomplete-clear.g-field-autocomplete-clear-visible {
+  &:before {
+    display: inline-block;
+  }
+}
+.g-field-autocomplete-clear.g-field-autocomplete-clear-visible:hover {
+  cursor: pointer;
+}

@@ -1,0 +1,25 @@
+# Go to http://jsfiddle.net/WeYRS/3/
+# Set size to 24
+# Set prefix to .icon-24.icon-
+# Paste the following:
+
+#padding
+#padding
+#padding
+#padding
+#padding
+#padding
+#padding
+#padding
+#padding
+#padding
+#padding
+#padding
+#padding
+#padding
+#padding
+#padding
+home, gears, wrench, person, dashboard, chart, gear, flask
+#reserved
+#reserved
+check-circle, stop-circle, alert-circle

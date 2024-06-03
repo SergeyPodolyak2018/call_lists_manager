@@ -1,0 +1,80 @@
+.g-widget .ui-datepicker select {
+  padding: 11px;
+}
+.g-widget .ui-datepicker select option {
+  color: black;
+}
+.g-widget .ui-datepicker {
+  padding: 0;
+  border: 1px solid #dae1e8;
+  border-top: none;
+  border-radius: 2px;
+}
+.g-widget .ui-datepicker .ui-datepicker-header {
+  background: @genesys-blue;
+  border: 1px solid @genesys-dark-blue;
+  border-right: 1px solid @genesys-dark-blue;
+  border-top-right-radius: 2px;
+  border-top-left-radius: 2px;
+  padding: 0;
+  width: 204px;
+  left: -1px;
+}
+.g-widget .ui-datepicker .ui-datepicker-title {
+  margin: 0;
+  height: 40px;
+  .icon-calendar-generic();
+  &:before {
+    padding: 10px 12px 0px 12px;
+    float: left;
+    font-size: 16px;
+    color: @genesys-off-white;
+  }
+}
+.ui-datepicker-prev,
+.ui-datepicker-next {
+  display: none;
+}
+.g-widget .ui-datepicker .ui-datepicker-title .ui-datepicker-month,
+.g-widget .ui-datepicker .ui-datepicker-title .ui-datepicker-year {
+  border: none;
+  background: transparent;
+  color: @genesys-off-white;
+  height: 40px;
+  margin: 0;
+}
+.g-widget .ui-datepicker .ui-datepicker-title .ui-datepicker-month {
+  border-right: 1px solid @genesys-dark-blue;
+  float: left;
+  width: 45%;
+  padding-left: 0px;
+}
+.g-widget .ui-datepicker .ui-datepicker-title .ui-datepicker-year {
+  width: auto;
+  padding-right: 8px;
+}
+.g-widget .ui-datepicker .ui-datepicker-calendar {
+  background: @genesys-off-white;
+  margin: 0 0 0.7em 0;
+}
+.g-widget .ui-widget-content .ui-state-default {
+  background: @genesys-off-white;
+  border: none;
+  color: @genesys-grey2;
+}
+.g-widget .ui-widget-content .ui-state-highlight,
+.g-widget .ui-datepicker-calendar .ui-state-hover {
+  background: @genesys-dark-blue;
+  color: @genesys-off-white;
+}
+.g-widget .ui-datepicker td {
+  padding: 0;
+}
+.g-widget .ui-datepicker td a {
+  text-align: center;
+  padding: 4px 0px 4px 0px;
+  width: 29px;
+}
+.g-widget .ui-widget-content {
+  color: @genesys-grey2;
+}

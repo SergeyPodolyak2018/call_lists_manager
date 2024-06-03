@@ -1,0 +1,102 @@
+@import '../../styles/color.scss';
+@import '../../styles/font_style.scss';
+
+.loginWrapper {
+  width: 100%;
+  height: 100%;
+}
+.inputContainer {
+  width: 100%;
+  & input {
+    height: 40px;
+  }
+}
+
+.imageContainer {
+  text-align: left;
+  width: calc(100% - 376px);
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  float: left;
+
+  & img {
+    display: inline-block;
+    vertical-align: middle;
+    max-height: 100vh;
+    min-height: 100vh;
+    min-width: 100%;
+    max-width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+}
+.arcLogin {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 50px;
+  background-color: #fdfdfd;
+  &::before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+  }
+  &_wrapper {
+    width: 275px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 2rem;
+  }
+}
+.branding {
+  height: 72px;
+  margin: 0 0 0 -1px;
+  width: 250px;
+  & img {
+    width: 250px;
+    height: 106px;
+  }
+}
+.productName {
+  text-align: center;
+  color: #444a52;
+  font-size: 22px;
+}
+
+.loginButton {
+  height: 40px;
+}
+.errorMessage {
+  background: $red;
+  overflow: hidden;
+  height: 0px;
+  &.show {
+    transition:
+      opacity 300ms,
+      height 3000ms,
+      visibility 200ms;
+    visibility: visible;
+    height: 75px;
+    opacity: 1;
+  }
+  &.hide {
+    transition:
+      opacity 200ms,
+      height 200ms,
+      visibility 200ms;
+    visibility: hidden;
+    height: 0px;
+    opacity: 0;
+    padding: 0;
+  }
+}
+.mandatory{
+  color: $red;
+  position: absolute;
+  left: 0;
+  bottom: -20px;
+  & i{
+    @include standart12x16x400
+  }
+}

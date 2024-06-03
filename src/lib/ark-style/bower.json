@@ -1,0 +1,84 @@
+{
+  "name": "ark-style",
+  "description": "Ark Style - Genesys CSS guidelines based on the UX Design Guidelines and Bootstrap.",
+  "version": "1.0.0-51",
+  "main": ["./dist/css/ark-css.css"],
+  "ignore": ["**/.*", "CONTRIBUTING.md"],
+  "authors": [
+    {
+      "name": "Jorge Barnaby",
+      "email": "jorge.barnaby@genesys.com",
+      "username": "camelot\\jbarnaby",
+      "publisher": true
+    },
+    {
+      "name": "Ark Dev Team",
+      "email": "arkdevteam@genesyslab.onmicrosoft.com"
+    }
+  ],
+  "reviewers": [
+    {
+      "role": "Development",
+      "name": "Ark Dev Team",
+      "email": "arkdevteam@genesyslab.onmicrosoft.com"
+    },
+    {
+      "role": "UX",
+      "name": "Trixie Pama",
+      "email": "trixie.pama@genesys.com"
+    },
+    {
+      "role": "FOSS",
+      "name": "Alex Lee",
+      "email": "alex.lee@genesys.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@git.genesyslab.com:ark/ark-style.git"
+  },
+  "repository-build": {
+    "type": "HG",
+    "url": "http://hg.genesyslab.com/hgweb.cgi/ark_style_build",
+    "project-root": "/"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "angular": {
+      "repository": "ag-thirdparty-prod",
+      "group_id": "ark",
+      "name": "angular",
+      "version": "1.5.6"
+    },
+    "angular-animate": {
+      "repository": "ag-thirdparty-prod",
+      "group_id": "ark",
+      "name": "angular-animate",
+      "version": "1.5.6"
+    },
+    "angular-mocks": {
+      "repository": "ag-thirdparty-prod",
+      "group_id": "ark",
+      "name": "angular-mocks",
+      "version": "1.5.6"
+    },
+    "angular-sanitize": {
+      "repository": "ag-thirdparty-prod",
+      "group_id": "ark",
+      "name": "angular-sanitize",
+      "version": "1.5.6"
+    },
+    "angular-route": {
+      "repository": "ag-thirdparty-prod",
+      "group_id": "ark",
+      "name": "angular-route",
+      "version": "1.5.6"
+    },
+    "angular-highlightjs": "0.6.1",
+    "angular-scroll": "1.0.0",
+    "highlightjs": "9.4",
+    "backstopjs": "~0.5.1"
+  },
+  "private": true,
+  "tag": "release-1.0.0-51"
+}

@@ -1,0 +1,42 @@
+@import '../../../styles/font_style.scss';
+.body {
+  height: 300px;
+  padding: 15px;
+  @include standart20x16x400;
+  position: relative;
+}
+.content{
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+}
+.name {
+  display: flex;
+  align-items: center;
+}
+.holder {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  @include standart20x16x400;
+}
+.list_info{
+  display: grid;
+  border-collapse: collapse;
+  width: 100%;
+  grid-template-columns: auto 250px;
+  cursor: default;
+  margin-top: 5px;
+  padding: 5px 5px 5px 10px;
+  word-break: break-all;
+}
+.campaigns{
+  width: 100%;
+  cursor: default;
+  margin-top: 5px;
+  padding: 5px 5px 5px 10px;
+  position: relative;
+  min-height: 120px;
+
+}

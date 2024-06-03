@@ -1,0 +1,19 @@
+@import '../../../styles/font_style';
+.main {
+  height: 100%;
+}
+.holder{
+  width: fit-content;
+  height: fit-content;
+  position:absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+.noData {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  @include standart20x16x400;
+}

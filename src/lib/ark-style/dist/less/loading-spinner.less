@@ -1,0 +1,70 @@
+.spinner-container {
+  height: 48px;
+  width: 48px;
+  position: relative;
+
+  .spin-circle {
+    z-index: 100;
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    border-bottom: 5px solid rgba(0, 0, 0, 0);
+    border-left: 5px solid rgba(0, 0, 0, 0);
+    border-right: 5px solid @genesys-blue;
+    border-top: 5px solid rgba(0, 0, 0, 0);
+    border-radius: 100%;
+    height: 52px;
+    width: 52px;
+    animation: spin 3s infinite linear;
+  }
+
+  .spin-inner-circle {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    border: solid 1px rgba(34, 37, 41, 0.14);
+    border-radius: 50%;
+  }
+
+  &.input-spinner {
+    height: 16px;
+    width: 16px;
+
+    .spin-circle {
+      left: -1px;
+      top: -1px;
+      border-bottom: 3px solid rgba(0, 0, 0, 0);
+      border-left: 3px solid rgba(0, 0, 0, 0);
+      border-right: 3px solid @genesys-blue;
+      border-top: 3px solid rgba(0, 0, 0, 0);
+      height: 18px;
+      width: 18px;
+    }
+
+    .spin-inner-circle {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  &.fast-spinner {
+    .spin-circle {
+      animation: spin 1s infinite linear;
+    }
+  }
+
+  &.dark-background {
+    .spin-inner-circle {
+      border: solid 1px #999;
+    }
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}

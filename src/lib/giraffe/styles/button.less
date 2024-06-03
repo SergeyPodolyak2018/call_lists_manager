@@ -1,0 +1,107 @@
+.button-variant(@color, @background-top, @background-bottom, @border) {
+  color: @color;
+  border-color: @border;
+
+  /* Default to the top color gradient for browsers that don't support gradients */
+  background: @background-top;
+
+  /* Set Button Gradient*/
+  /* Safari 4-5, Chrome 1-9 */
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(@background-top), to(@background-bottom));
+
+  /* Safari 5.1, Chrome 10+ */
+  background: -webkit-linear-gradient(top, @background-top, @background-bottom);
+
+  /* Firefox 3.6+ */
+  background: -moz-linear-gradient(top, @background-top, @background-bottom);
+
+  /* IE 10 */
+  background: -ms-linear-gradient(top, @background-top, @background-bottom);
+
+  /* Opera 11.10+ */
+  background: -o-linear-gradient(top, @background-top, @background-bottom);
+}
+
+.g-button.ui-button {
+  margin: 0;
+  font-weight: bold;
+  margin: 0;
+  border-color: #d0d0d0;
+  border-radius: 2px;
+  padding: 0 24px;
+  height: 32px;
+}
+.g-widget .ui-button-text-only .ui-button-text,
+.g-widget .g-textfield-action.ui-button-icon-only,
+.g-widget .g-panel-buttonbar .ui-button {
+  padding: 0;
+}
+.g-widget .ui-button-text-icon-primary .ui-button-text,
+.g-widget .ui-button-text-icon-secondary .ui-button-text,
+.g-widget .ui-button-text-icons .ui-button-text {
+  padding: 0 3px 0 3px;
+}
+.g-button.ui-state-default {
+  .button-variant(@btn-default-color, @btn-default-bg-top, @btn-default-bg-bottom, @btn-default-border);
+}
+.g-button.ui-state-hover {
+  .button-variant(@btn-default-color, @btn-default-bg-hover-top, @btn-default-bg-hover-bottom, @btn-default-border);
+}
+.g-button.ui-state-active {
+  background: #f5f5f5 url(i/state-active-bg.png) repeat-x;
+}
+.g-button.ui-state-focus {
+  outline: none;
+}
+.g-button-alternative.ui-state-default {
+  .button-variant(@btn-primary-color, @btn-primary-bg-top, @btn-primary-bg-bottom, @btn-primary-border);
+}
+.g-button-alternative.ui-state-hover {
+  .button-variant(@btn-primary-color, @btn-primary-bg-hover-top, @btn-primary-bg-hover-bottom, @btn-primary-border);
+}
+.g-button-alternative.ui-state-active {
+  .button-variant(@btn-primary-color, @btn-primary-bg-hover-bottom, @btn-primary-bg-hover-top, @btn-primary-border);
+}
+.g-button-alternative.ui-button-text-icon-primary {
+  padding: 0 24px 0 40px;
+}
+.g-button-alternative.ui-button-text-icon-primary span.ui-button-icon-primary {
+  left: 24px;
+}
+.g-button.g-button-transparent.ui-button {
+  background: transparent;
+  border-color: transparent;
+}
+.g-button-transparent .ui-icon {
+  /*opacity: .6;*/
+}
+.g-button.g-button-transparent.ui-state-hover {
+  /*border-color: #d0d0d0;*/
+}
+.g-button.g-button-transparent.ui-state-active {
+  /*border-color: transparent;*/
+}
+.g-button-transparent.ui-state-hover .ui-icon {
+  /*opacity: 1;*/
+}
+.g-button-transparent.ui-state-hover .ui-button-text {
+  /*text-decoration: underline;*/
+}
+.g-button-transparent.ui-state-active .ui-icon {
+  /*opacity: .6;*/
+}
+.g-button-transparent.ui-state-active .ui-button-text {
+  text-decoration: none;
+}
+.g-widget .ui-button-icon-only {
+  width: 56px;
+}
+.g-button-align-right {
+  float: right;
+}
+.g-buttonbar .g-button-align-right.g-buttonbar-item-last {
+  margin-right: 4px;
+}
+.g-button-align-left {
+  float: left;
+}

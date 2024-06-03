@@ -1,0 +1,448 @@
+{
+  "allChangesets": [
+    {
+      "title": "Release 1.0.0-51",
+      "timeStamp": "Nov 10, 2016",
+      "body": [
+        {
+          "component": "Forms",
+          "changeInfo": ["[JIRA:ARK-907] Remove padding from inputs with feedback."]
+        },
+        {
+          "component": "Login",
+          "changeInfo": ["[JIRA:ARK-1710] CSS refactoring."]
+        },
+        {
+          "component": "Modals",
+          "changeInfo": ["[JIRA:ARK-1721] Vertical scroll is forced in modal overlay."]
+        },
+        {
+          "component": "Navbar",
+          "changeInfo": ["[JIRA:ARK-1640] Fix display icons on the right side of navbar on large screens."]
+        },
+        {
+          "component": "Search Input",
+          "changeInfo": ["[JIRA:ARK-1709] Cleanup and refactoring the styling to be used outside of search use cases."]
+        }
+      ]
+    },
+    {
+      "title": "Release 1.0.0-50 (Skipped)",
+      "timeStamp": "",
+      "body": []
+    },
+    {
+      "title": "Release 1.0.0-49 (Same as version 1.0.0-48)",
+      "timeStamp": "Jul 20, 2016",
+      "body": []
+    },
+    {
+      "title": "Release 1.0.0-48",
+      "timeStamp": "Jul 19, 2016",
+      "body": [
+        {
+          "component": "Icons",
+          "changeInfo": [
+            "(BREAKING CHANGE) Remove agent-status-* icons as there are already new and updated status-* icons.",
+            "(BREAKING CHANGE) Remove icon 8-dropdown-arrow-small, existing dropdown-arrow can be used.",
+            "Update menu-hamburger icon.",
+            "Update status-queue icons.",
+            "Fix status-ready-partial icon.",
+            "Add 2 new icons: status-queue-full and status-unknown.",
+            "Add 4 new icons: measure-growing, measure-point-in-time, measure-sliding, measure-today."
+          ]
+        },
+        {
+          "component": "Form - Select",
+          "changeInfo": ["[JIRA:ARK-1690] Style <select> element to have consistent design and arrow across browsers."]
+        },
+        {
+          "component": "Modal",
+          "changeInfo": ["[JIRA:ARK-1695] Add padding to buttons when there is more than 2."]
+        },
+        {
+          "component": "Navbar",
+          "changeInfo": ["[JIRA:ARK-1640] Add responsive support.", "Update documentation."]
+        },
+        {
+          "component": "Typography",
+          "changeInfo": ["[JIRA:ARK-1696] Update typography sizing to match UX Guidelines (minor adjustment to H4)."]
+        },
+        {
+          "component": "Underline Tabs",
+          "changeInfo": ["[JIRA:ARK-1698] Styling adjustments to match UX Guidelines."]
+        },
+        {
+          "component": "Dev Gallery",
+          "changeInfo": [
+            "Upgrade Gallery to Angular 1.5.",
+            "[JIRA:ARK-341][JIRA:ARK-1699][JIRA:ARK-1700] Improvements in Color section.",
+            "Many fixes and improvements."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Release 1.0.0-47",
+      "timeStamp": "May 25, 2016",
+      "body": [
+        {
+          "component": "General",
+          "changeInfo": ["[JIRA:ARK-1668] Published package shows incorrect version."]
+        }
+      ]
+    },
+    {
+      "title": "Release 1.0.0-46 (Skipped)",
+      "timeStamp": "",
+      "body": []
+    },
+    {
+      "title": "Release 1.0.0-45",
+      "timeStamp": "May 25, 2016",
+      "body": [
+        {
+          "component": "Icons",
+          "changeInfo": [
+            "(BREAKING CHANGE) Remove icon-exapand-right because of typo, icon-expand-right already in place.",
+            "(BREAKING CHANGE) Replace social icons with new ones (icon-social-google-plus -> icon-google-plus-circle, icon-social-linked-in -> icon-linkedin-square, icon-social-pinterest -> icon-pinterest-circle).",
+            "(BREAKING CHANGE) Remove icon-status-call icon as it has been superseded by more specific Agent Status icons.",
+            "(BREAKING CHANGE) Rename and update icon-status-blocked icon to icon-status-ready-blocked.",
+            "New CX icons.",
+            "New and updated Agent Status icons.",
+            "New icons (icon-archive, icon-calendar-media-voice, icon-drag-out).",
+            "Update icons icon-clock-timezone, icon-pinned and icon-tag."
+          ]
+        },
+        {
+          "component": "Loading Spinner",
+          "changeInfo": ["[JIRA:ARK-1654] Add Dark Background support."]
+        },
+        {
+          "component": "Navbar",
+          "changeInfo": ["[JIRA:ARK-1209] Fixed wrongly aligned triangle for hover dropdown."]
+        },
+        {
+          "component": "Tables",
+          "changeInfo": ["[JIRA:ARK-1616] Sorting icons are inconsistent with Ark Grid."]
+        },
+        {
+          "component": "Dev Gallery",
+          "changeInfo": ["Remove old unused Jekyll Dev Gallery.", "Minor cleanup."]
+        }
+      ]
+    },
+    {
+      "title": "Release 1.0.0-44",
+      "timeStamp": "Mar 15, 2016",
+      "body": [
+        {
+          "component": "Dev Gallery",
+          "changeInfo": ["Simplify content organization.", "Minor fixes on few pages."]
+        },
+        {
+          "component": "Buttons",
+          "changeInfo": ["Fix height on buttons with icons."]
+        }
+      ]
+    },
+    {
+      "title": "Release 1.0.0-43",
+      "timeStamp": "Mar 11, 2016",
+      "body": [
+        {
+          "component": "General",
+          "changeInfo": [
+            "[JIRA:ARK-930]: Internal Information found in compiled CSS and remove MIT license.",
+            "Delete all JS jQuery based component code that Ark does not support.",
+            "Clean up and refactor of build (Grunt) process.",
+            "Move jQuery as a devDependency, so Ark Style no longer requires jQuery.",
+            "[JIRA:ARK-1194] Correct Genesys blue to match UX Guidelines (#75A8FF)"
+          ]
+        },
+        {
+          "component": "Dev Gallery",
+          "changeInfo": [
+            "New Dev Gallery based on Angular.",
+            "Remove JS section (Bootstrap-based) as no longer supported."
+          ]
+        },
+        {
+          "component": "Accordion",
+          "changeInfo": ["[JIRA:ARK-1074]: Accordion header paddings should follow Summary Palette Design Guidelines."]
+        },
+        {
+          "component": "Buttons",
+          "changeInfo": ["[JIRA:ARK-1190]: Style fixes for the basic states of the generic and primary buttons."]
+        },
+        {
+          "component": "Dropdown",
+          "changeInfo": ["[JIRA:ARK-1051]: Change dropdown arrow to grey on buttons."]
+        },
+        {
+          "component": "Icons",
+          "changeInfo": ["[JIRA:ARK-1483]: New Icons (GWE, Social Media, Charts)."]
+        },
+        {
+          "component": "Login",
+          "changeInfo": ["Update login form example to use `autocomplete=off`."]
+        },
+        {
+          "component": "Navigation Tabs",
+          "changeInfo": [
+            "[JIRA:ARK-1194]: Styling improvements (correct padding and borders and add styling for action button)"
+          ]
+        },
+        {
+          "component": "Popover",
+          "changeInfo": ["[JIRA:ARK-1193]: Popover style fixes (padding, shadow position, and corner radius)."]
+        }
+      ]
+    },
+    {
+      "title": "Release 1.0.0-42",
+      "timeStamp": "Oct 1, 2015",
+      "body": [
+        {
+          "component": "Checkboxes",
+          "changeInfo": ["[JIRA:ARK-910]: Add Multi Sate Checkboxes."]
+        }
+      ]
+    },
+    {
+      "title": "Release 1.0.0-41",
+      "timeStamp": "Jul 23, 2015",
+      "body": [
+        {
+          "component": "Icons",
+          "changeInfo": ["[JIRA:ARK-724]: New Inspect Email icon."]
+        }
+      ]
+    },
+    {
+      "title": "Release 1.0.0-40",
+      "timeStamp": "Jul 8, 2015",
+      "body": [
+        {
+          "component": "General",
+          "changeInfo": [
+            "[JIRA:ARK-694]: Update jQuery dependency to point to Nexus.",
+            "[JIRA:ARK-671]: Table Nav Icon: Removed right spacing that became unnecessary when table elements introduced padding.",
+            "[JIRA:ARK-686]: Implemented CSS regression testing.",
+            "[JIRA:ARK-709]: Adding styling for icons in title header."
+          ]
+        },
+        {
+          "component": "Accordion",
+          "changeInfo": [
+            "[JIRA:ARK-398][JIRA:ARK-399]: Accordion: Set accordion-header cursor to pointer, added left padding."
+          ]
+        },
+        {
+          "component": "Dropdowns",
+          "changeInfo": ["[JIRA:ARK-691]: Error in dropdown CSS not applying styles properly."]
+        },
+        {
+          "component": "Gallery",
+          "changeInfo": [
+            "[JIRA:ARK-326]: Forms: Promoted \"Checkboxes and radios\" to its own section.",
+            "[JIRA:ARK-333][JIRA:ARK-334][JIRA:ARK-342]: Underline Tabs: Changed example icon, added example, set default active in examples."
+          ]
+        },
+        {
+          "component": "Login",
+          "changeInfo": [
+            "[JIRA:ARK-358]: Ark Login: Changed login alert icon to a supported colour, added padding-top to error-container."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Release 1.0.0-39",
+      "timeStamp": "Jun 17, 2015",
+      "body": [
+        {
+          "component": "Icons",
+          "changeInfo": ["[JIRA:ARK-618]: 3 Agents Status + Tag icons need fixing."]
+        },
+        {
+          "component": "Navbar",
+          "changeInfo": [
+            "[JIRA:ARK-332]: Gallery adjustments.",
+            "[JIRA:ARK-336]: Gallery adjustments.",
+            "[JIRA:ARK-337]: Gallery adjustments.",
+            "[JIRA:ARK-338]: Gallery adjustments."
+          ]
+        },
+        {
+          "component": "Login",
+          "changeInfo": ["[JIRA:ARK-289]: Styling moved from Ark Component into Ark Style."]
+        }
+      ]
+    },
+    {
+      "title": "Release 1.0.0-38",
+      "timeStamp": "Jun 1, 2015",
+      "body": [
+        {
+          "component": "Buttons",
+          "changeInfo": ["[JIRA:ARK-217]: Buttons with icons now have the same height as regular buttons."]
+        }
+      ]
+    },
+    {
+      "title": "Release 1.0.0-37",
+      "timeStamp": "Apr 17, 2015",
+      "body": [
+        {
+          "component": "Tables",
+          "changeInfo": ["[JIRA:ARK-226]: Table cells don't have a right padding."]
+        },
+        {
+          "component": "Modals",
+          "changeInfo": ["[JIRA:ARK-402]: Misaligned header icon fix.", "New optional theme added."]
+        },
+        {
+          "component": "Dropdowns",
+          "changeInfo": ["Adding support for menu item hover on Navbar."]
+        }
+      ]
+    },
+    {
+      "title": "Release 1.0.0-36",
+      "timeStamp": "Mar 31, 2015",
+      "body": [
+        {
+          "component": "Icons",
+          "changeInfo": ["New icon format temporarily disabled."]
+        }
+      ]
+    },
+    {
+      "title": "Release 1.0.0-35",
+      "timeStamp": "Mar 30, 2015",
+      "body": [
+        {
+          "component": "Icons",
+          "changeInfo": ["[JIRA:ARK-290]: Font icon generation process improved."]
+        }
+      ]
+    },
+    {
+      "title": "Release 1.0.0-34",
+      "timeStamp": "Mar 16, 2015",
+      "body": [
+        {
+          "component": "Buttons",
+          "changeInfo": ["[JIRA:ARK-204]: Button gradients are reversed in Firefox."]
+        },
+        {
+          "component": "Forms",
+          "changeInfo": ["[JIRA:ARK-157]: Added search input to Ark Forms."]
+        },
+        {
+          "component": "Dropdowns",
+          "changeInfo": ["[JIRA:ARK-294]: Support for this ticket. Icon rotates if dropdown opens up."]
+        }
+      ]
+    },
+    {
+      "title": "Release 1.0.0-33 (Skipped)",
+      "timeStamp": "",
+      "body": []
+    },
+    {
+      "title": "Release 1.0.0-32",
+      "timeStamp": "Jan 5, 2015",
+      "body": [
+        {
+          "component": "Ark Icons",
+          "changeInfo": ["New icons added."]
+        }
+      ]
+    },
+    {
+      "title": "Release 1.0.0-31",
+      "timeStamp": "Nov 7, 2014",
+      "body": [
+        {
+          "component": "Ark Icons",
+          "changeInfo": [
+            "New icons added.",
+            "[JIRA:ARK-217]: Configured grunt web-font to generate CSS to fix fonticon positioning issues."
+          ]
+        },
+        {
+          "component": "Documentation",
+          "changeInfo": ["Updated documentation with correct files."]
+        },
+        {
+          "component": "Side Tabs",
+          "changeInfo": ["Updated the color of the Ark Side Tabs borders."]
+        },
+        {
+          "component": "Style Type",
+          "changeInfo": ["Added Primary and Secondary Header styling."]
+        }
+      ]
+    },
+    {
+      "title": "Release 1.0.0-30",
+      "timeStamp": "Oct 16, 2014",
+      "body": [
+        {
+          "component": "Global",
+          "changeInfo": ["Prefixed ark-css main class name renamed to `ark` (from `ark-css`)."]
+        }
+      ]
+    },
+    {
+      "title": "Release 1.0.0-29",
+      "timeStamp": "Oct 10, 2014",
+      "body": [
+        {
+          "component": "Ark Icons",
+          "changeInfo": ["Font Icons regenarated because of problems rendering icons in Windows."]
+        }
+      ]
+    },
+    {
+      "title": "Release 1.0.0-28",
+      "timeStamp": "Oct 10, 2014",
+      "body": [
+        {
+          "component": "Global",
+          "changeInfo": [
+            "Prefixed ark-css for usage in mixed environment (such as with GAX or other libraries) to avoid collisions."
+          ]
+        },
+        {
+          "component": "Navbar",
+          "changeInfo": ["[JIRA:ARK-195]: Fixed padding for dropdown arrow."]
+        },
+        {
+          "component": "Ark Icons",
+          "changeInfo": [
+            "New Icons Added (icon-24-control-pause, icon-24-graph-grid-cell, icon-agent-like, icon-chat-frown, icon-chat-smile, icon-checkbox-tick-lock, icon-cobrowse-disable, icon-dashtab-dash, icon-dashtab-settings, icon-dashtab-xwidget, icon-dialpod, icon-exapand-right, icon-globe, icon-inspect-phone, icon-inspect-phone-disable, icon-inspect-star, icon-pc-mobile-phone, icon-status-bad, icon-status-good, icon-view-lists), related to [JIRA:UX-590]"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Release 1.0.0-27",
+      "timeStamp": "Oct 1, 2014",
+      "body": [
+        {
+          "component": "Navbar",
+          "changeInfo": [
+            "[JIRA:ARK-175]: Removed 'within pills' from gallery.",
+            "[JIRA:ARK-176]: Removed 'collapse' from gallery.",
+            "[JIRA:ARK-177]: Fixed vertical positioning of fonticons.",
+            "[JIRA:ARK-178]: Changed caret icon to chevron icons.",
+            "[JIRA:ARK-184]: Fixed resizing navbar issue styling."
+          ]
+        }
+      ]
+    }
+  ]
+}

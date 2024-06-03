@@ -1,0 +1,106 @@
+.mainContainer {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+}
+
+.propertiesContainer {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  height: 100%;
+  gap: 10px;
+}
+.cellHolder {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  input {
+    width: 100%;
+    height: 37px;
+    border: 0;
+  }
+}
+
+.thirdPropertiesContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+  width: 25%;
+  gap: 10px;
+}
+.arrowsWrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.propertyContainer {
+  max-height: 50px;
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  gap: 30px;
+  line-height: 20px;
+}
+
+.smallPropContainer {
+  max-height: 50px;
+  width: 100%;
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 30px;
+  line-height: 20px;
+}
+
+.dropDown {
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+}
+
+.buttonContainer {
+  width: 25%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.propsTableContainer {
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  display: flex;
+  th,
+  td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  th {
+    background: #f6f7f9;
+  }
+}
+
+.label {
+  width: 150px;
+}
+
+.propsTable {
+  width: 80%;
+}
+
+caption {
+  border: 1px solid #ddd;
+  padding: 8px;
+  font-weight: bold;
+  font-size: 13px;
+}

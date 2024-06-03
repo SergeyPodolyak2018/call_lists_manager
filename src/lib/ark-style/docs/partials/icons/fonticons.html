@@ -1,0 +1,157 @@
+<h3 id="fonticons-glyphs">Available Icons</h3>
+
+<p>Includes dingbats in font format. For new icon requests contact UX team.</p>
+
+<p>To use these icons, place the following code just about anywhere. Be sure to leave a space between the icon and text for proper padding.</p>
+
+<form class="form-horizontal">
+  <div class="row">
+    <div class="col-md-6 col-sm-6">
+      <input class="form-control" ng-model="model.search" placeholder="Filter Icons">
+    </div>
+
+    <div class="col-md-2 col-sm-2">
+      <p class="form-control-static">{{ filteredIcons.length }} icons</p>
+    </div>
+
+    <div class="col-md-4 col-sm-4">
+      <div class="toggle-switch" style="margin: 7px 0;">
+        <input type="checkbox" name="css-toggle-icons" class="toggle-switch-checkbox" id="css-toggle-icons"
+          ng-model="model.showNonStandardIcons">
+        <label class="toggle-switch-label" for="css-toggle-icons">
+          <span class="toggle-switch-inner"></span>
+          <span class="toggle-switch-switch"></span>
+        </label>
+        <label for="css-toggle-icons" class="toggle-switch-label-text">
+          View Non-Standard Icon Sizes
+          <a href du-smooth-scroll="fonticons-icon-base-sizes">
+            <span class="icon-alert-info"></span>
+          </a>
+        </label>
+      </div>
+    </div>
+  </div>
+</form>
+
+<div class="bs-glyphicons">
+  <ul class="bs-glyphicons-list">
+    <li ng-repeat="icon in filteredIcons = (model.fonticons | filter:model.search)">
+      <span class="glyphicon" ng-class="icon"></span>
+      <span class="glyphicon-class" ng-bind="icon"></span>
+    </li>
+  </ul>
+</div>
+
+
+<h3 id="fonticons-how-to-use">How to use the icons</h3>
+
+<p>To use these icons, place the following code just about anywhere. Be sure to leave a space between the icon and text for proper padding.</p>
+
+<div hljs include="'icons-how-to-use.html'" language="html"></div>
+
+<div class="bs-callout bs-callout-danger">
+  <h4>Don't mix with other components</h4>
+  <p>Icon classes cannot be directly combined with other components. They should not be used along with other classes on the same element. Instead, add a nested <code>&lt;span&gt;</code> and apply the icon classes to the <code>&lt;span&gt;</code>.</p>
+</div>
+
+<div class="bs-callout bs-callout-danger">
+  <h4>Only for use on empty elements</h4>
+  <p>Icon classes should only be used on elements that contain no text content and have no child elements.</p>
+</div>
+
+<div ng-include="'icons-example.html'" class="bs-example"></div>
+
+<div hljs include="'icons-example.html'" language="html"></div>
+
+
+<h3 id="fonticons-accessability">Accessibility</h3>
+
+<p>Modern versions of assistive technologies will announce CSS generated content, as well as specific Unicode characters. To avoid unintended and confusing output in screen readers (particularly when icons are used purely for decoration), we hide them with the <code>aria-hidden="true"</code> attribute.</p>
+
+<p>If you're using an icon to convey meaning (rather than only as a decorative element), ensure that this meaning is also conveyed to assistive technologies – for instance, include additional content, visually hidden with the <code>.sr-only</code> class.</p>
+
+<p>If you're creating controls with no other text (such as a <code>&lt;button&gt;</code> that only contains an icon), you should always provide alternative content to identify the purpose of the control, so that it will make sense to users of assistive technologies. In this case, you could add an <code>aria-label</code> attribute on the control itself.</p>
+
+<div ng-include="'icons-accessibility-1.html'" class="bs-example"></div>
+
+<div hljs include="'icons-accessibility-1.html'" language="html"></div>
+
+<div ng-include="'icons-accessibility-2.html'" class="bs-example"></div>
+
+<div hljs include="'icons-accessibility-2.html'" language="html"></div>
+
+<div ng-include="'icons-accessibility-3.html'" class="bs-example"></div>
+
+<div hljs include="'icons-accessibility-3.html'" language="html"></div>
+
+
+<h3 id="fonticons-icon-base-sizes">Icon Base Sizes and Scalability</h3>
+
+<h4>Our Standard Base Sizes and Scaling</h4>
+
+<p>Ark icons are designed to scale upwards from a base size. Our standard icons are designed at a base size of <strong>16 pixels</strong>. Because this is our standard, no base sizing designation is provided within the name.</p>
+
+<p>From the standard base size of <code>16px</code> we recommend, when required, to scale the icon to <code>16 > 24 > 32 > 48 > 64 > 96...</code> or mathematically, <code>1 > 1.5 > 2 > 2.5 > 3 > 3.5 > 4</code>. When we stick to these upward resizing principals, we will get the sharpest possible results from our icons.</p>
+
+<p>Scaling down?... The icons are <strong>not</strong> designed to scale down. If the base size of an icon is 16px, for example, it should never be reduced to <code>8px</code>. The same is true for larger custom base sizes. Doing so can make the image blurry.</p>
+
+<h4>Larger Custom Base Sizes</h4>
+
+<p>At times, we have generated large custom icons where the base size is much larger. These custom base sizes, typically 24 or 48 pixels, allows us to add finer visual details. These larger base sizes can be identified in the name of the icon itself as ending in <code>24</code>, <code>48</code>, etc, and it is the only time we use numerical values in the icon naming. By default, we auto-hide these custom sizes, as they will be used by a limited amount of teams. A toggle at the top of the page makes them visible for review.</p>
+
+<p>Larger custom icons can be scaled up, just like our standard base size, and we use the same mathematical multipliers - <code>1 > 1.5 > 2 > 2.5 > 3 > 3.5 > 4</code>. So for instance, a <strong>24 pixel</strong> base icon can be scaled up like such – <code>24 > 32 > 48...</code>.</p>
+
+<h4>Questions?</h4>
+
+If you have any questions or concerns about the development, sizing, or base sizes, please contact <a href="mailto:paul.grant@genesys.com">Paul Grant</a> in UX
+
+
+<!-- Templates -->
+
+<script type="text/ng-template" id="icons-how-to-use.html">
+<span class="icon-search" aria-hidden="true"></span>
+</script>
+
+<script type="text/ng-template" id="icons-example.html">
+<button type="button" class="btn btn-default" aria-label="Left Align">
+  <span class="icon-text-justify-left" aria-hidden="true"></span>
+</button>
+
+<button type="button" class="btn btn-default">
+  <span class="icon-star-outline" aria-hidden="true"></span> Star
+</button>
+</script>
+
+<script type="text/ng-template" id="icons-accessibility-1.html">
+<a class="btn btn-default" href="path/to/settings">
+  <i class="icon-settings-gear" title="Settings" aria-hidden="true"></i>
+  <span class="sr-only">Settings</span>
+</a>
+
+<a class="btn btn-danger" href="path/to/settings">
+  <i class="icon-trash" title="Delete" aria-hidden="true"></i>
+  <span class="sr-only">Delete</span>
+</a>
+
+<a class="btn btn-primary" href="#navigation-main">
+  <i class="icon-menu-hamburger" title="Skip to main navigation" aria-hidden="true"></i>
+  <span class="sr-only">Skip to main navigation</span>
+</a>
+</script>
+
+<script type="text/ng-template" id="icons-accessibility-2.html">
+<div class="input-group">
+  <span class="input-group-addon"><i class="icon-email" aria-hidden="true"></i></span>
+  <input class="form-control" type="text" placeholder="Email address">
+</div>
+<br>
+<div class="input-group">
+  <span class="input-group-addon"><i class="icon-secure" aria-hidden="true"></i></span>
+  <input class="form-control" type="password" placeholder="Password">
+</div>
+</script>
+
+<script type="text/ng-template" id="icons-accessibility-3.html">
+<i class="icon-cart" aria-hidden="true"></i>
+<span class="sr-only">Shopping Cart</span>
+</script>

@@ -1,0 +1,29 @@
+.table {
+  display: table;
+  width: 100%;
+  //   border-collapse: collapse;
+}
+
+.tableBody {
+  display: table-row-group;
+  width: 100%;
+}
+
+.row {
+  display: table-row;
+}
+
+.innerRow {
+  width: 100%;
+}
+.cell {
+  display: table-cell;
+  padding: 8px;
+  //   border: 1px solid #ddd;
+  text-align: center; /* Выравнивание содержимого по центру */
+}
+
+.header {
+  font-weight: bold;
+  background-color: #f2f2f2;
+}

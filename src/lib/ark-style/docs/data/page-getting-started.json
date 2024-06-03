@@ -1,0 +1,58 @@
+{
+  "title": "Getting Started",
+  "description": "This is the Ark CSS Styling Layer that follows the UX Design Guidelines.",
+  "sections": [
+    {
+      "id": "support",
+      "title": "Browser and Device Support",
+      "template": "partials/getting-started/browser-support.html",
+      "subSections": [
+        {
+          "id": "support-browsers",
+          "title": "Supported browsers"
+        },
+        {
+          "id": "support-ie8-ie9",
+          "title": "Internet Explorer 8-9"
+        },
+        {
+          "id": "support-ie8-respondjs",
+          "title": "IE8 and Respond.js"
+        },
+        {
+          "id": "support-ie8-box-sizing",
+          "title": "IE8 and box-sizing"
+        },
+        {
+          "id": "support-ie-compatibility-modes",
+          "title": "IE Compatibility modes"
+        },
+        {
+          "id": "support-safari-percentages",
+          "title": "Safari percent rounding"
+        },
+        {
+          "id": "support-fixed-position-keyboards",
+          "title": "Modals, navbars, and virtual keyboards"
+        },
+        {
+          "id": "support-browser-zooming",
+          "title": "Browser zooming"
+        },
+        {
+          "id": "support-printing",
+          "title": "Printer viewports"
+        },
+        {
+          "id": "support-android-stock-browser",
+          "title": "Android stock browser"
+        }
+      ]
+    },
+    {
+      "id": "third-party",
+      "title": "Third Party Support",
+      "template": "partials/getting-started/third-party-support.html"
+    }
+  ]
+}

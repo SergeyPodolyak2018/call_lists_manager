@@ -1,0 +1,29 @@
+@import '../../../styles/font_style.scss';
+@import '../../../styles/color.scss';
+
+.tooltip-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.tooltip {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  @include standart12x16x400;
+  color: $black;
+  
+}
+
+.tooltip-content {
+  border-radius: 4px;
+  opacity: 0.9;
+  white-space: nowrap;
+}

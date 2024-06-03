@@ -1,0 +1,12 @@
+@import '../../../styles/font_style.scss';
+@import '../../../styles/color.scss';
+.active {
+  background-color: $grey;
+}
+
+.container {
+  display: flex;
+  padding: 5px 0 5px 0;
+  line-height: 20px;
+  gap: 10px;
+}

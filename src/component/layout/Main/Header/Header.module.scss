@@ -1,0 +1,41 @@
+@import '../../../../styles/font_style.scss';
+@import '../../../../styles/color.scss';
+.headerContainer {
+  width: 100%;
+  height: 41px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  background-color: white;
+  .subwrapper {
+    flex-grow: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+.logotext {
+  @include standart;
+  color: $white;
+  margin: 0;
+}
+.headerElement {
+  @include standart20x12x400;
+  color: $grey;
+  margin-left: 20px;
+  cursor: pointer;
+  &:hover {
+    color: $white;
+  }
+
+  &::after {
+    content: '|';
+    padding: 0 6.5px;
+  }
+  &::before {
+    content: '|';
+    padding: 0 6.5px;
+  }
+}

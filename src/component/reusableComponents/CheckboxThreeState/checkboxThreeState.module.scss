@@ -1,0 +1,28 @@
+@import '../../../styles/color';
+@import '../../../styles/font_style';
+
+.checkbox_wrapper {
+  width: 30px;
+  
+  cursor: pointer;
+  font-size: 16px;
+  position: relative;
+}
+.dropdown{
+  position: fixed;
+  background: $white; 
+  border: 1px solid #75a8ff;
+  width: fit-content;
+  height: fit-content;
+  left: 20px;
+  top: 20px;
+  display: none;
+  @include standart12x16x400;
+  padding:1px;
+  & div{
+    padding: 5px;
+    &:hover{
+      background: $blue-3;
+    }
+  }
+}

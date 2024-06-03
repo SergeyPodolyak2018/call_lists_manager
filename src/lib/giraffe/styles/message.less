@@ -1,0 +1,47 @@
+.g-message {
+  padding: 12px 10px 12px 14px;
+  color: @brand-primary;
+  line-height: 16px;
+  position: relative;
+}
+.g-widget .g-message-icon {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.g-widget .g-message-icon {
+  &:before {
+    vertical-align: middle !important;
+  }
+}
+.g-message-text {
+  margin: 0 0 0 30px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.g-message-closable .g-message-text {
+  margin-right: 30px;
+}
+.g-message-closable .g-message-close {
+  visibility: visible;
+}
+.g-message-close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  opacity: 0.6;
+  cursor: pointer;
+  visibility: hidden;
+}
+.g-message-close:hover {
+  opacity: 1;
+}
+.g-message-info {
+  background: @state-success-bg;
+}
+.g-message-alert {
+  background: @state-warning-bg;
+}
+.g-message-error {
+  background: @state-danger-bg;
+}

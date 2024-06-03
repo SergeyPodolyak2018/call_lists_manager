@@ -1,0 +1,61 @@
+.g-field-radiogroup input {
+  position: absolute;
+  z-index: -1;
+  display: none;
+}
+.g-radiobutton-img {
+  background: url(i/checkbox-radio.png) no-repeat;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  vertical-align: middle;
+  float: left;
+}
+.g-radiobutton-img {
+  background-position: 0px -16px;
+}
+.g-radiobutton-focused .g-radiobutton-img {
+  background-position: -16px -16px;
+}
+.g-field-disabled .g-radiobutton-img {
+  background-position: -32px -16px;
+}
+.g-radiobutton-selected .g-radiobutton-img {
+  background-position: -64px -16px;
+}
+.g-radiobutton-focused.g-radiobutton-selected .g-radiobutton-img {
+  background-position: -80px -16px;
+}
+.g-field-disabled .g-radiobutton-selected .g-radiobutton-img {
+  background-position: -96px -16px;
+}
+.g-field-radiogroup-choices {
+  clear: both;
+}
+.g-field-radiogroup .g-field-radiogroup-choices label {
+  display: block;
+  cursor: pointer;
+  margin: 0 0 0 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.g-field-radiogroup-horizontal .g-field-radiogroup-choices div {
+  float: left;
+  margin-right: 20px;
+}
+.g-field-radiogroup-horizontal .g-field-radiogroup-choices label {
+  display: inline-block !important;
+  vertical-align: baseline;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.g-field-horizontal-align .g-field-radiogroup-choices {
+  overflow: auto;
+  clear: none;
+  padding-top: 5px;
+}
+.g-field-horizontal-align .g-field-radiogroup-choices .g-field-radiogroup-choice {
+  margin-right: 10px;
+}

@@ -1,0 +1,14 @@
+# Go to http://jsfiddle.net/WeYRS/3/
+# Set size to 96
+# Set prefix to .icon-96.icon-
+# Paste the following:
+
+#padding
+#padding
+#padding
+#padding
+#padding
+#padding
+plus-circle, rack, rack-add
+id-circle, home-circle, out-circle, org-circle
+cloud-circle, sound-circle, desktop-circle

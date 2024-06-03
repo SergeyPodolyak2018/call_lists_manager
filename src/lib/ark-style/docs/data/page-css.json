@@ -1,0 +1,361 @@
+{
+  "title": "CSS Styles",
+  "description": "Global CSS settings, fundamental HTML elements styled and enhanced with extensible classes, and an advanced grid system.",
+  "sections": [
+    {
+      "id": "overview",
+      "title": "Overview",
+      "template": "partials/css/overview.html",
+      "subSections": [
+        {
+          "id": "overview-doctype",
+          "title": "HTML5 doctype"
+        },
+        {
+          "id": "overview-type-links",
+          "title": "Typography and links"
+        },
+        {
+          "id": "overview-normalize",
+          "title": "Normalize.css"
+        },
+        {
+          "id": "overview-container",
+          "title": "Containers"
+        }
+      ]
+    },
+    {
+      "id": "grid-system",
+      "title": "Grid System",
+      "template": "partials/css/grid-system.html",
+      "subSections": [
+        {
+          "id": "grid-intro",
+          "title": "Introduction"
+        },
+        {
+          "id": "grid-media-queries",
+          "title": "Media queries"
+        },
+        {
+          "id": "grid-options",
+          "title": "Grid options"
+        },
+        {
+          "id": "grid-example-basic",
+          "title": "Ex: Stacked-to-horizontal"
+        },
+        {
+          "id": "grid-example-fluid",
+          "title": "Ex: Fluid container"
+        },
+        {
+          "id": "grid-example-mixed",
+          "title": "Ex: Mobile and desktops"
+        },
+        {
+          "id": "grid-example-mixed-complete",
+          "title": "Ex: Mobile, tablet, desktops"
+        },
+        {
+          "id": "grid-responsive-resets",
+          "title": "Responsive column resets"
+        },
+        {
+          "id": "grid-offsetting",
+          "title": "Offsetting columns"
+        },
+        {
+          "id": "grid-nesting",
+          "title": "Nesting columns"
+        },
+        {
+          "id": "grid-column-ordering",
+          "title": "Column ordering"
+        },
+        {
+          "id": "grid-less",
+          "title": "Less mixins and variables"
+        }
+      ]
+    },
+    {
+      "id": "typography",
+      "title": "Typography",
+      "template": "partials/css/typography.html",
+      "subSections": [
+        {
+          "id": "type-headings",
+          "title": "Headings"
+        },
+        {
+          "id": "type-body-copy",
+          "title": "Body copy"
+        },
+        {
+          "id": "type-labels",
+          "title": "Labels"
+        },
+        {
+          "id": "type-text-selection",
+          "title": "Text Selection"
+        },
+        {
+          "id": "type-emphasis",
+          "title": "Emphasis"
+        }
+      ]
+    },
+    {
+      "id": "colors",
+      "title": "Colors",
+      "template": "partials/css/colors.html",
+      "subSections": [
+        {
+          "id": "colors-main-colors",
+          "title": "Main Colors"
+        },
+        {
+          "id": "colors-defining-areas",
+          "title": "Defining areas using colour"
+        },
+        {
+          "id": "colors-for-type",
+          "title": "Colors for type"
+        },
+        {
+          "id": "colors-derivative-shades",
+          "title": "Derivative Shades"
+        },
+        {
+          "id": "colors-using",
+          "title": "Using color to show condition"
+        },
+        {
+          "id": "colors-genesys-metrics",
+          "title": "Genesys Metrics Palette"
+        }
+      ]
+    },
+    {
+      "id": "tables",
+      "title": "Tables",
+      "template": "partials/css/tables.html",
+      "subSections": [
+        {
+          "id": "tables-example",
+          "title": "Basic example"
+        }
+      ]
+    },
+    {
+      "id": "forms",
+      "title": "Forms",
+      "template": "partials/css/forms.html",
+      "subSections": [
+        {
+          "id": "forms-example",
+          "title": "Basic example"
+        },
+        {
+          "id": "forms-inline",
+          "title": "Inline form"
+        },
+        {
+          "id": "forms-horizontal",
+          "title": "Horizontal form"
+        },
+        {
+          "id": "forms-inputs",
+          "title": "Inputs"
+        },
+        {
+          "id": "forms-textarea",
+          "title": "Textarea"
+        },
+        {
+          "id": "search-input",
+          "title": "Search input"
+        },
+        {
+          "id": "forms-checkboxes",
+          "title": "Checkboxes and radios"
+        },
+        {
+          "id": "forms-selects",
+          "title": "Selects"
+        },
+        {
+          "id": "forms-control-disabled",
+          "title": "Disabled state - NSY"
+        },
+        {
+          "id": "forms-control-validation",
+          "title": "Validation states"
+        },
+        {
+          "id": "forms-help-text",
+          "title": "Help text"
+        }
+      ]
+    },
+    {
+      "id": "buttons",
+      "title": "Buttons",
+      "template": "partials/css/buttons.html",
+      "subSections": [
+        {
+          "id": "buttons-options",
+          "title": "Options"
+        },
+        {
+          "id": "buttons-active",
+          "title": "Active state"
+        },
+        {
+          "id": "buttons-disabled",
+          "title": "Disabled state"
+        },
+        {
+          "id": "buttons-tags",
+          "title": "Button tags"
+        },
+        {
+          "id": "buttons-icons",
+          "title": "Button icons"
+        }
+      ]
+    },
+    {
+      "id": "toggle-switches",
+      "title": "Toggle Switches",
+      "template": "partials/css/toggle-switches.html",
+      "subSections": [
+        {
+          "id": "toggles-examples",
+          "title": "Basic Example"
+        },
+        {
+          "id": "toggles-label",
+          "title": "Text Label"
+        }
+      ]
+    },
+    {
+      "id": "loading-spinner",
+      "title": "Loading Spinner",
+      "template": "partials/css/loading-spinner.html",
+      "subSections": [
+        {
+          "id": "default-spinner",
+          "title": "Default Spinner"
+        },
+        {
+          "id": "dark-spinner",
+          "title": "Spinner on Dark Background"
+        },
+        {
+          "id": "fast-spinner",
+          "title": "Fast Spinner"
+        },
+        {
+          "id": "input-spinner",
+          "title": "Input Spinner"
+        }
+      ]
+    },
+    {
+      "id": "login-form",
+      "title": "Login Form",
+      "template": "partials/css/login-form.html"
+    },
+    {
+      "id": "responsive-utilities",
+      "title": "Responsive utilities - TBI",
+      "template": "partials/css/responsive-utilities.html",
+      "subSections": [
+        {
+          "id": "responsive-utilities-classes",
+          "title": "Available classes"
+        },
+        {
+          "id": "responsive-utilities-print",
+          "title": "Print classes"
+        },
+        {
+          "id": "responsive-utilities-tests",
+          "title": "Test cases"
+        }
+      ]
+    },
+    {
+      "id": "dropdowns",
+      "title": "Dropdowns",
+      "template": "partials/css/dropdowns.html",
+      "subSections": [
+        {
+          "id": "dropdowns-example",
+          "title": "Example"
+        },
+        {
+          "id": "dropdowns-alignment",
+          "title": "Alignment options"
+        },
+        {
+          "id": "dropdowns-headers",
+          "title": "Headers"
+        },
+        {
+          "id": "dropdowns-disabled",
+          "title": "Disabled menu items"
+        }
+      ]
+    },
+    {
+      "id": "btn-dropdowns",
+      "title": "Button Dropdowns",
+      "template": "partials/css/button-dropdowns.html",
+      "subSections": [
+        {
+          "id": "btn-dropdowns-single",
+          "title": "Single button dropdowns"
+        }
+      ]
+    },
+    {
+      "id": "nav",
+      "title": "Navs",
+      "template": "partials/css/navs.html",
+      "subSections": [
+        {
+          "id": "nav-usage-guide",
+          "title": "Overview and Examples"
+        },
+        {
+          "id": "nav-browser-style-tabs",
+          "title": "Browser Style Tabs"
+        },
+        {
+          "id": "nav-side-tabs",
+          "title": "Side Tabs"
+        },
+        {
+          "id": "nav-underline-tabs",
+          "title": "Underline Tabs"
+        }
+      ]
+    },
+    {
+      "id": "navbar",
+      "title": "Navbar",
+      "template": "partials/css/navbar.html",
+      "subSections": [
+        {
+          "id": "navbar-default",
+          "title": "Default navbar"
+        }
+      ]
+    }
+  ]
+}

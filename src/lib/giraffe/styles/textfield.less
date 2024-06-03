@@ -1,0 +1,90 @@
+.g-textfield input::-ms-clear {
+  display: none;
+}
+.g-textfield input,
+.g-textfield textarea {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border: 1px solid #d0d0d0;
+  box-shadow: inset 0 2px 2px rgba(152, 152, 152, 0.15);
+  padding: 4px;
+  margin: 0;
+}
+.g-textfield input {
+  height: 32px;
+}
+.g-textfield .placeholder {
+  color: #aaa;
+}
+.g-textfield textarea {
+  resize: vertical;
+  /* Remove vertical scrollbar from IE */
+  overflow: auto;
+}
+.g-textfield.g-field-fit input,
+.g-textfield.g-field-fit textarea {
+  width: 100%;
+}
+.g-textfield.g-field-disabled input,
+.g-textfield.g-field-disabled textarea {
+  background: #f8f8f8;
+  color: #666;
+  cursor: default !important;
+}
+.g-textfield.g-field-invalid input,
+.g-textfield.g-field-invalid textarea {
+  border-color: @state-danger-bg !important;
+  color: @state-danger-bg !important;
+  outline-color: @state-danger-bg !important;
+}
+.g-textfield-wrap {
+  position: relative;
+}
+.g-textfield-actions {
+  .g-field-actions;
+  position: absolute;
+  top: 7px;
+  right: 4px;
+}
+.g-textfield-with-actions input {
+  padding-right: 22px;
+  text-overflow: ellipsis;
+}
+.g-widget .g-textfield-actions button {
+  .g-field-item-actions-button;
+}
+.g-textfield-with-icon input,
+.g-textfield-with-icon textarea {
+  padding-left: 28px;
+}
+.g-textfield-icon {
+  position: absolute;
+  opacity: 0.6;
+}
+.g-textfield-focus .g-textfield-icon {
+  opacity: 1;
+}
+.g-textfield-icon .ui-icon {
+  position: relative;
+  top: 8px;
+  left: 8px;
+}
+.g-field-horizontal-align .g-textfield-wrap {
+  overflow: auto;
+}
+.g-textfield input.g-spinner {
+  /* to override dialog generic spinner */
+  display: inline-block !important;
+  position: relative !important;
+  background-position: 100% 50%;
+  /* should be same as gtextfied input above */
+  height: 32px !important;
+  background-repeat: no-repeat;
+  top: 0px !important;
+  z-index: 0 !important;
+}
+.g-textfield-with-actions input.g-spinner {
+  background-position: 95% 50% !important;
+}

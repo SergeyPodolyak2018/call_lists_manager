@@ -1,0 +1,31 @@
+<p class="lead">To style a dropdown menu right below a button, just place it within a <code>.btn-group</code> and provide the proper menu markup.</p>
+
+<div class="bs-callout bs-callout-warning">
+  <h4>Ark Style only provides CSS styling for any element</h4>
+  <p>So if you need to have the dropdown functionality, you can use Ark Components (if your project uses Angular) or add some logic through JS.</p>
+</div>
+
+<h3 class="secondary-header" id="btn-dropdowns-single">Single button dropdowns</h3>
+
+<div ng-include="'single-button-dropdown.html'" class="bs-example"></div>
+
+<div hljs include="'single-button-dropdown.html'" language="html"></div>
+
+
+<!-- Templates -->
+
+<script type="text/ng-template" id="single-button-dropdown.html">
+<div class="btn-group dropdown-group">
+    <button type="button" class="btn btn-default btn-dropdown dropdown-toggle">
+        Default
+        <span class="icon-dropdown-arrow"></span>
+    </button>
+    <ul class="dropdown-menu" role="menu">
+        <li><a href="#">Action</a></li>
+        <li><a href="#">Another action</a></li>
+        <li><a href="#">Something else here</a></li>
+        <li class="divider"></li>
+        <li><a href="#">Separated link</a></li>
+    </ul>
+</div>
+</script>

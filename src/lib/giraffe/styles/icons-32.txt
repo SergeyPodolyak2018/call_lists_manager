@@ -1,0 +1,21 @@
+# Go to http://jsfiddle.net/WeYRS/3/
+# Set size to 32
+# Set prefix to .icon-32.icon-
+# Paste the following:
+
+#padding
+#padding
+#padding
+#padding
+#padding
+#padding
+#padding
+#padding
+#padding
+#padding
+#padding
+#padding
+#padding
+#padding
+#padding
+edit, clone, remove, table, stackedbar, groupedbar

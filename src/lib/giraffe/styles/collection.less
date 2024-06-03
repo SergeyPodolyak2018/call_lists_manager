@@ -1,0 +1,97 @@
+.g-collection-item,
+.g-collection-placeholder {
+  border: 1px solid transparent; /* may remove */
+  padding: 3px;
+  padding-top: 5px;
+  /*white-space: nowrap;*/
+  text-overflow: ellipsis;
+  overflow: hidden;
+  line-height: 14px;
+}
+.g-collection-item-selected {
+  background-color: #edebe6;
+  font-weight: bold;
+  color: #4a5965;
+}
+.g-collection-item-first {
+}
+.g-collection-placeholder {
+  color: #969696;
+}
+.ui-sortable .g-collection-item {
+  cursor: move;
+  cursor: -webkit-grab;
+  cursor: grab;
+  &:active {
+    cursor: move;
+    cursor: -webkit-grabbing;
+    cursor: grabbing;
+  }
+}
+.g-field-disabled .ui-sortable .g-collection-item {
+  cursor: auto;
+}
+.g-collection-border {
+  clear: left;
+}
+.g-collection-item:hover {
+  color: @brand-primary;
+  background: #4169b2;
+}
+.g-collection-actions {
+  .g-field-actions;
+  text-align: right;
+  padding-top: 4px;
+  position: relative;
+  left: 1px;
+}
+.g-collection-container {
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 110px;
+}
+.g-collection-with-actions .g-collection-border {
+}
+.g-widget .g-collection-item-actions button,
+.g-widget .g-collection-actions button {
+  .g-field-item-actions-button;
+}
+.g-widget .g-collection-item-actions button {
+  background: none !important;
+  color: white !important;
+}
+.g-collection-item.ui-sortable-helper {
+  background-color: #4169b2;
+  color: white;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.17);
+  cursor: move;
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+.g-collection-item-actions {
+  position: absolute;
+  float: right;
+  &:hover button {
+    color: #4169b2 !important;
+  }
+}
+.g-collection-container .g-collection-item .g-collection-item-error,
+.g-collection-container .g-collection-item .g-collection-item-warning {
+  /*this position must not be absolute because z-index will make it appear when item is hidden and overflow*/
+  position: static;
+  border: none;
+  background: transparent;
+  text-indent: 2px;
+}
+.g-collection-item-warning .ui-icon,
+.g-collection-item-error .ui-icon {
+  display: inline-block;
+  white-space: nowrap;
+  vertical-align: bottom;
+}
+.g-collection-item-error .ui-icon {
+  color: red;
+}
+.g-field-invalid .g-collection-border {
+  border-color: #eb6b6b !important;
+}

@@ -1,0 +1,417 @@
+<style>
+.swatch {
+  border: 1px solid #DEDEDE;
+  position: relative;
+  float: left;
+  width: 28px;
+  height: 19px;
+  margin: 2px 3px 0 0;
+}
+.shades:before,
+.shades:after,
+.metrics-pallete .color-boxes:before,
+.metrics-pallete .color-boxes:after {
+  display: table;
+  content: " ";
+}
+.shades:after,
+.metrics-pallete .color-boxes:after {
+  clear: both;
+}
+.shades > div {
+  color: white;
+  float: left;
+  padding: 10px 0 0 0;
+  position: relative;
+  min-height: 1px;
+  height: 250px;
+  width: 12%;
+}
+.shades > div p {
+  margin: 0;
+  padding: 0 10px;
+}
+.metrics-pallete {
+  position: relative;
+}
+.metrics-pallete .overlay {
+  color: white;
+  position: absolute;
+  top: 10px;
+  width: 100%;
+}
+.metrics-pallete .overlay .start {
+  float: left;
+  padding-left: 20px;
+}
+.metrics-pallete .overlay .finish {
+  float: right;
+  padding-right: 20px;
+}
+.metrics-pallete .overlay .arrow {
+  float: left;
+  padding-left: 10px;
+  width: calc(100% - 10px - 70px - 45px);
+}
+.metrics-pallete .overlay .arrow .line {
+  margin-top: 10px;
+  height: 2px;
+  background: white;
+}
+.metrics-pallete .overlay .arrow .point {
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 7px solid white;
+  float: right;
+  margin-top: -6px;
+  margin-right: -2px;
+}
+.metrics-pallete .color-boxes > div {
+  float: left;
+  height: 40px;
+  width: 4.347%;
+}
+</style>
+
+
+<h3 class="secondary-header" id="colors-main-colors">Main Colors</h3>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Swatch Name</th>
+      <th>Hex Value</th>
+      <th>Primary Use</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong><span class="swatch" style="background:#5E99FF"></span> Genesys Blue</strong></td>
+      <td>#75A8FF</td>
+      <td>Accent</td>
+    </tr>
+    <tr>
+      <td><strong><span class="swatch" style="background:#2E69DB"></span> Genesys Dark Blue</strong></td>
+      <td>#2E69DB</td>
+      <td>Focus, Active</td>
+    </tr>
+    <tr>
+      <td><strong><span class="swatch" style="background:#222529"></span> Genesys Grey #1</strong></td>
+      <td>#222529</td>
+      <td>Toolbars</td>
+    </tr>
+    <tr>
+      <td><strong><span class="swatch" style="background:#444A52"></span> Genesys Grey #2</strong></td>
+      <td>#444A52</td>
+      <td>Type</td>
+    </tr>
+    <tr>
+      <td><strong><span class="swatch" style="background:#FDFDFD"></span> Genesys Off-White</strong></td>
+      <td>#FDFDFD</td>
+      <td>Background</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<h3 class="secondary-header" id="colors-defining-areas">Defining areas using colour</h3>
+
+<p>Genesys Vision uses background color to apportion function to screen areas. Generally, a dark background should be used for tool bars and palettes, a light background for the main workspace. Areas within those backgrounds can be defined with subtle 1px keylines.</p>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Swatch Name</th>
+      <th>Hex Value</th>
+      <th>Keyline Colour</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong><span class="swatch" style="background:#222529"></span> Genesys Grey #1</strong></td>
+      <td>#222529</td>
+      <td><strong><span class="swatch" style="background:#444A52"></span> Genesys Grey #2</strong></td>
+    </tr>
+    <tr>
+      <td><strong><span class="swatch" style="background:#444A52"></span> Genesys Grey #2</strong></td>
+      <td>#444A52</td>
+      <td><strong><span class="swatch" style="background:#222529"></span> Genesys Grey #1</strong></td>
+    </tr>
+    <tr>
+      <td><strong><span class="swatch" style="background:#FDFDFD"></span> Genesys Off-White</strong></td>
+      <td>#FDFDFD</td>
+      <td><strong><span class="swatch" style="background:#E4E9F0"></span> #E4E9F0</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+
+<h3 class="secondary-header" id="colors-for-type">Colors for type</h3>
+
+<p>Type should never appear in any color other than grey and white, and should be carefully selected for accessibility reasons. The table below outlines the default palette for all type.</p>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>On Background</th>
+      <th>Swatch Name</th>
+      <th>Hex Value</th>
+      <th>Usage</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong><span class="swatch" style="background:#FDFDFD"></span> Genesys Off-White</strong></td>
+      <td><strong><span class="swatch" style="background:#444A52"></span> Genesys Grey #2</strong></td>
+      <td>#444A52</td>
+      <td>Primary</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><strong><span class="swatch" style="background:#666F7A"></span> #666F7A</strong></td>
+      <td>#666F7A</td>
+      <td>Secondary</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><strong><span class="swatch" style="background:#222529"></span> Genesys Grey #1</strong></td>
+      <td>#222529</td>
+      <td>Focus</td>
+    </tr>
+    <tr>
+      <td><strong><span class="swatch" style="background:#33383D"></span> #33383D or darker</strong></td>
+      <td><strong><span class="swatch" style="background:#98A7B8"></span> #98A7B8</strong></td>
+      <td>#98A7B8</td>
+      <td>Primary</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><strong><span class="swatch" style="background:#9CA1A6"></span> #9CA1A6</strong></td>
+      <td>#666F7A</td>
+      <td>Secondary</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><strong><span class="swatch" style="background:#FDFDFD"></span> Genesys Off-White</strong></td>
+      <td>#FDFDFD</td>
+      <td>Focus</td>
+    </tr>
+    <tr>
+      <td><strong><span class="swatch" style="background:#2E69DB"></span> Genesys Dark Blue</strong></td>
+      <td><strong><span class="swatch" style="background:#FDFDFD"></span> Genesys Off-White</strong></td>
+      <td>#FDFDFD</td>
+      <td>Primary</td>
+    </tr>
+    <tr>
+      <td><strong><span class="swatch" style="background:#5E99FF"></span> Genesys Blue</strong></td>
+      <td><strong>DO NOT SET TYPE ON THIS BACKGROUND COLOR</strong></td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<h3 class="secondary-header" id="colors-derivative-shades">Derivative Shades</h3>
+
+<p>Shades of colours can be derived as needed from any Genesys Primary color by adjusting its brightness percentage by increments of 8.</p>
+
+<div class="shades">
+  <div style="width: 28%; background: #222529;">
+    <p>Genesys Grey #1</p>
+    <p>#222529</p>
+    <p>H212, S17, B16</p>
+  </div>
+  <div style="background: #33383D;">
+    <p>#33383D</p>
+    <p>B24</p>
+  </div>
+  <div style="background: #444A52;">
+    <p>#444A52</p>
+    <p>B32</p>
+  </div>
+  <div style="background: #555D66;">
+    <p>#555D66</p>
+    <p>B40</p>
+  </div>
+  <div style="background: #666F7A;">
+    <p>#666F7A</p>
+    <p>B48</p>
+  </div>
+  <div style="background: #77828F;">
+    <p>#77828F</p>
+    <p>B56</p>
+  </div>
+  <div style="background: #8794A3;">
+    <p>#8794A3</p>
+    <p>B64</p>
+  </div>
+</div>
+
+
+<h3 class="secondary-header" id="colors-using">Using color to show condition</h3>
+
+<p>Genesys Vision uses color to convey conditional statistics, therefore color should never be used arbitrarily. Generally, you can use the following as a guide to each color and its meaning:</p>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Condition</th>
+      <th>Hex Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Normal</td>
+      <td><strong><span class="swatch" style="background:#555D66"></span> #555D66</strong></td>
+    </tr>
+    <tr>
+      <td>Focus, Active</td>
+      <td><strong><span class="swatch" style="background:#2E69DB"></span> #2E69DB</strong></td>
+    </tr>
+    <tr>
+      <td>Disabled</td>
+      <td><strong><span class="swatch" style="background:#EDF3FA"></span> #EDF3FA</strong></td>
+    </tr>
+    <tr>
+      <td>Alert, Danger</td>
+      <td><strong><span class="swatch" style="background:#EA4F6B"></span> #EA4F6B</strong></td>
+    </tr>
+    <tr>
+      <td>Warning</td>
+      <td><strong><span class="swatch" style="background:#F8A740"></span> #F8A740</strong></td>
+    </tr>
+    <tr>
+      <td>Neutral</td>
+      <td><strong><span class="swatch" style="background:#203B73"></span> #203B73</strong></td>
+    </tr>
+    <tr>
+      <td>Good</td>
+      <td><strong><span class="swatch" style="background:#4AC764"></span> #4AC764</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+
+<h3 class="secondary-header" id="colors-genesys-metrics">Genesys Metrics Palette</h3>
+
+<p>Genesys Vision uses color to convey conditional statistics, therefore color should never be used arbitrarily. Generally, you can use the following as a guide to each color and its meaning:</p>
+
+<div class="metrics-pallete">
+  <div class="overlay">
+    <div class="start">Common</div>
+    <div class="arrow">
+      <div class="line"></div>
+      <div class="point"></div>
+    </div>
+    <div class="finish">Rare</div>
+  </div>
+  <div class="color-boxes">
+    <div style="background: #203B73;" title="#203B73"></div>
+    <div style="background: #2E69DB;" title="#2E69DB"></div>
+    <div style="background: #5E99FF;" title="#5E99FF"></div>
+    <div style="background: #9BBCE0;" title="#9BBCE0"></div>
+    <div style="background: #5A6B8C;" title="#5A6B8C"></div>
+    <div style="background: #0F6A51;" title="#0F6A51"></div>
+    <div style="background: #569180;" title="#569180"></div>
+    <div style="background: #14819C;" title="#14819C"></div>
+    <div style="background: #7EC0C2;" title="#7EC0C2"></div>
+    <div style="background: #AFD6D2;" title="#AFD6D2"></div>
+    <div style="background: #584FB3;" title="#584FB3"></div>
+    <div style="background: #7272E0;" title="#7272E0"></div>
+    <div style="background: #B9B9F0;" title="#B9B9F0"></div>
+    <div style="background: #575746;" title="#575746"></div>
+    <div style="background: #827C75;" title="#827C75"></div>
+    <div style="background: #C9C4B7;" title="#C9C4B7"></div>
+    <div style="background: #8C6542;" title="#8C6542"></div>
+    <div style="background: #8A4D67;" title="#8A4D67"></div>
+    <div style="background: #C48C88;" title="#C48C88"></div>
+    <div style="background: #EBC8BE;" title="#EBC8BE"></div>
+    <div style="background: #724787;" title="#724787"></div>
+    <div style="background: #B07EC2;" title="#B07EC2"></div>
+    <div style="background: #D1B4D9;" title="#D1B4D9"></div>
+  </div>
+</div>
+
+<br>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Hex Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong><span class="swatch" style="background:#203B73"></span> #203B73</strong></td>
+    </tr>
+    <tr>
+      <td><strong><span class="swatch" style="background:#2E69DB"></span> #2E69DB</strong></td>
+    </tr>
+    <tr>
+      <td><strong><span class="swatch" style="background:#5E99FF"></span> #5E99FF</strong></td>
+    </tr>
+    <tr>
+      <td><strong><span class="swatch" style="background:#9BBCE0"></span> #9BBCE0</strong></td>
+    </tr>
+    <tr>
+      <td><strong><span class="swatch" style="background:#5A6B8C"></span> #5A6B8C</strong></td>
+    </tr>
+    <tr>
+      <td><strong><span class="swatch" style="background:#0F6A51"></span> #0F6A51</strong></td>
+    </tr>
+    <tr>
+      <td><strong><span class="swatch" style="background:#569180"></span> #569180</strong></td>
+    </tr>
+    <tr>
+      <td><strong><span class="swatch" style="background:#14819C"></span> #14819C</strong></td>
+    </tr>
+    <tr>
+      <td><strong><span class="swatch" style="background:#7EC0C2"></span> #7EC0C2</strong></td>
+    </tr>
+    <tr>
+      <td><strong><span class="swatch" style="background:#AFD6D2"></span> #AFD6D2</strong></td>
+    </tr>
+    <tr>
+      <td><strong><span class="swatch" style="background:#584FB3"></span> #584FB3</strong></td>
+    </tr>
+    <tr>
+      <td><strong><span class="swatch" style="background:#7272E0"></span> #7272E0</strong></td>
+    </tr>
+    <tr>
+      <td><strong><span class="swatch" style="background:#B9B9F0"></span> #B9B9F0</strong></td>
+    </tr>
+    <tr>
+      <td><strong><span class="swatch" style="background:#575746"></span> #575746</strong></td>
+    </tr>
+    <tr>
+      <td><strong><span class="swatch" style="background:#827C75"></span> #827C75</strong></td>
+    </tr>
+    <tr>
+      <td><strong><span class="swatch" style="background:#C9C4B7"></span> #C9C4B7</strong></td>
+    </tr>
+    <tr>
+      <td><strong><span class="swatch" style="background:#8C6542"></span> #8C6542</strong></td>
+    </tr>
+    <tr>
+      <td><strong><span class="swatch" style="background:#8A4D67"></span> #8A4D67</strong></td>
+    </tr>
+    <tr>
+      <td><strong><span class="swatch" style="background:#C48C88"></span> #C48C88</strong></td>
+    </tr>
+    <tr>
+      <td><strong><span class="swatch" style="background:#EBC8BE"></span> #EBC8BE</strong></td>
+    </tr>
+    <tr>
+      <td><strong><span class="swatch" style="background:#724787"></span> #724787</strong></td>
+    </tr>
+    <tr>
+      <td><strong><span class="swatch" style="background:#B07EC2"></span> #B07EC2</strong></td>
+    </tr>
+    <tr>
+      <td><strong><span class="swatch" style="background:#D1B4D9"></span> #D1B4D9</strong></td>
+    </tr>
+  </tbody>
+</table>

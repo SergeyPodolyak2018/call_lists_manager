@@ -1,0 +1,52 @@
+.g-tree {
+  padding: 2px;
+}
+.g-tree-node {
+  background-color: @brand-primary;
+}
+.g-tree .g-tree-node-first {
+  overflow: auto;
+}
+.g-tree-node .ui-icon {
+  display: inline-block;
+  vertical-align: middle;
+}
+.g-tree-node-header {
+  cursor: pointer;
+}
+.g-tree-node-toggle {
+  opacity: 0.5;
+}
+.g-tree-node-collapsed > .g-tree-node-header .g-tree-node-collapse {
+  display: none;
+}
+.g-tree-node-expanded > .g-tree-node-header .g-tree-node-expand {
+  display: none;
+}
+.g-tree-node-title {
+  vertical-align: middle;
+}
+.g-tree-children {
+  list-style-type: none;
+  padding: 0;
+  margin: 8px 0 0 16px;
+}
+.g-tree-node-collapsed > .g-tree-children {
+  display: none;
+}
+.g-tree-branch {
+  margin-top: 8px;
+}
+.g-tree-node-first.g-tree-branch {
+  margin-top: 0;
+}
+.g-tree-leaf {
+  background: none !important;
+}
+.g-tree-node-header:hover {
+  background-color: #edf7fa;
+}
+.g-tree-node-selected > .g-tree-node-header {
+  background-color: #4cb2d2;
+  color: @brand-primary;
+}

@@ -1,0 +1,75 @@
+<p class="lead">Presents checkboxes as toggle switches.  This is a purely CSS toggle switch.</p>
+
+<h3 class="secondary-header" id="toggles-examples">Basic Example</h3>
+
+<p>Toggle switch is an alternative presentation of a checkbox.</p>
+
+<p>The checkbox is wrapped in a <code>div</code> with the <code>toggle-switch</code> class.  The checkbox itself has <code>toggle-switch-checkbox</code> class and remains hidden.</p>
+
+<p>The <code>label</code> element has <code>toggle-switch-label</code> class and is declared for the checkbox.  Inside the <code>label</code> element, there are two <code>span</code> elements, with the following classes:</p>
+
+<ul>
+  <li><code>toggle-switch-inner</code></li>
+  <li><code>toggle-switch-switch</code></li>
+</ul>
+
+<div ng-include="'toggle-basic-example.html'" class="bs-example"></div>
+
+<div hljs include="'toggle-basic-example.html'" language="html"></div>
+
+
+<h3 class="secondary-header" id="toggles-label">Text Label</h3>
+
+<p>The toggle can have optional text label.  To specify the label, add a <code>label</code> element with the <code>toggle-switch-label-text</code> class after the <code>toggle-switch-label</code>.</p>
+
+<div ng-include="'toggle-text-label.html'" class="bs-example"></div>
+
+<div hljs include="'toggle-text-label.html'" language="html"></div>
+
+<p>Optionally, different labels can be used for "on" and "off" state.  Inside the <code>toggle-switch-label-text</code> label, specify the "on" and "off" text in a <code>span</code> in <code>toggle-switch-on-label-text</code> and <code>toggle-switch-off-label-text</code> respectively.</p>
+
+<div ng-include="'toggle-on-off.html'" class="bs-example"></div>
+
+<div hljs include="'toggle-on-off.html'" language="html"></div>
+
+
+<!-- Templates -->
+
+<script type="text/ng-template" id="toggle-basic-example.html">
+<div class="toggle-switch">
+    <input type="checkbox" name="css-toggle-example" class="toggle-switch-checkbox" id="css-toggle-example" checked>
+    <label class="toggle-switch-label" for="css-toggle-example">
+            <span class="toggle-switch-inner"></span>
+            <span class="toggle-switch-switch"></span>
+    </label>
+</div>
+<div class="toggle-switch">
+    <input type="checkbox" name="css-toggle-example-off" class="toggle-switch-checkbox" id="css-toggle-example-off" >
+    <label class="toggle-switch-label" for="css-toggle-example-off">
+            <span class="toggle-switch-inner"></span>
+            <span class="toggle-switch-switch"></span>
+    </label>
+</div>
+</script>
+
+<script type="text/ng-template" id="toggle-text-label.html">
+<div class="toggle-switch">
+    <input type="checkbox" name="css-toggle-label" class="toggle-switch-checkbox" id="css-toggle-label" checked>
+    <label class="toggle-switch-label" for="css-toggle-label">
+            <span class="toggle-switch-inner"></span>
+            <span class="toggle-switch-switch"></span>
+    </label>
+    <label for="css-toggle-label" class="toggle-switch-label-text">Toggle label</label>
+</div>
+</script>
+
+<script type="text/ng-template" id="toggle-on-off.html">
+<div class="toggle-switch">
+    <input type="checkbox" name="css-toggle-on-off-label" class="toggle-switch-checkbox" id="css-toggle-on-off-label" checked>
+    <label class="toggle-switch-label" for="css-toggle-on-off-label">
+            <span class="toggle-switch-inner"></span>
+            <span class="toggle-switch-switch"></span>
+    </label>
+    <label for="css-toggle-on-off-label" class="toggle-switch-label-text"><span class="toggle-switch-on-label-text">On</span><span class="toggle-switch-off-label-text">Off</span></label>
+</div>
+</script>

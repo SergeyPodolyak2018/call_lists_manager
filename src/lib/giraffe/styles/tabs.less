@@ -1,0 +1,42 @@
+.g-tabs {
+  overflow: auto;
+}
+.g-tabs-tabs {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  float: left;
+  border: 1px solid #ccc;
+  border-right: none;
+  border-bottom: none;
+}
+.g-tabs-tab {
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  padding: 11px 16px 12px 22px;
+  cursor: pointer;
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+.g-tabs-tab:hover {
+  background-color: @brand-primary;
+}
+.g-tabs-tab.g-tabs-tab-active {
+  border-right: 1px solid @brand-primary;
+  background-color: @brand-primary;
+}
+.g-tabs-tab.g-tabs-tab-error {
+  background-image: url(i/tab-error.png);
+  background-repeat: no-repeat;
+  background-position: 3px 50%;
+}
+.g-tabs-content {
+  border: 1px solid #ccc;
+  background: @brand-primary;
+}
+.g-tabs-tab-content {
+  position: relative;
+}
+.g-tabs-buttonbar {
+  border-top: 1px solid #d0d0d0;
+}

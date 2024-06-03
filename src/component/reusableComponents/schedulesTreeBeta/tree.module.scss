@@ -1,0 +1,100 @@
+@import '../../../styles/font_style.scss';
+@import '../../../styles/color.scss';
+.container {
+  width: 100%;
+  height: calc(100% - 40px);
+  overflow-y: scroll;
+}
+.disabledCallingList {
+  span {
+    color: #acacac;
+  }
+}
+.tree_node {
+  @include standart20x12x400;
+  position: relative;
+  &_end {
+    &:not(.active):hover {
+      background-color: $tableBorder;
+    }
+    &_flex {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+.node_simple {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: color 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.node_toggle {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  transition: 0.2s;
+
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  position: relative;
+  // &:after{
+  //   content: '';
+  //   display: block;
+  //   position: absolute;
+  //   width: 100%;
+  //   bottom: 0px;
+  //   height: 1px;
+  //   background-color: #000;
+  //   z-index: 100;
+
+  // }
+  &:hover {
+    background-color: $tableBorder;
+  }
+}
+
+.child_nodes {
+  list-style: none;
+}
+
+.child_nodes > li {
+  margin: 5px 0;
+}
+
+.arrow_left {
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-top: 1px solid #000;
+  border-left: 1px solid #000;
+  transform: rotate(136deg);
+  transition: 500ms;
+  margin-left: 5px;
+  top: 1px;
+  &.rotate {
+    transform: rotate(230deg);
+  }
+}
+.icon {
+  width: 10px;
+  height: 18px;
+  min-width: 10px;
+}
+.active {
+  background-color: $grey;
+  color: $white;
+  font-weight: 600;
+}
+.configInfo {
+  color: $red;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+}

@@ -1,0 +1,131 @@
+<p class="lead">Navs available in Ark have shared markup, starting with the base <code>.nav</code> class, as well as shared states. Swap modifier classes to switch between each style.</p>
+
+<h3 class="secondary-header" id="nav-usage-guide">Overview and Examples</h3>
+
+<p>For an overview of usage of different tab styles, refer to the guide <a href="assets/files/ark-tabs-demystified-v2.pdf">Ark Tabs Demystified</a>.</p>
+
+
+<h3 class="secondary-header" id="nav-browser-style-tabs">Browser Style Tabs</h3>
+
+<p>Note the <code>.nav-tabs</code> class requires the <code>.nav</code> base class.</p>
+
+<div ng-include="'browser-style-tabs.html'" class="bs-example"></div>
+
+<div hljs include="'browser-style-tabs.html'" language="html"></div>
+
+
+<h3 class="secondary-header" id="nav-side-tabs">Side Tabs</h3>
+
+<p>Note the <code>.nav-tabs</code> class requires the <code>.nav</code> base class.</p>
+
+<div ng-include="'side-tabs.html'" class="bs-example"></div>
+
+<div hljs language="html">
+    <div class="side-tabs-container">
+        <ul class="nav nav-side-tabs">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">A Very Long Title for Tab</a></li>
+        </ul>
+        <div class="tabs-contents" style="width: calc(100% - 140px)">
+            <!-- Insert your tab contents here -->
+        </div>
+    </div>
+</div>
+
+
+<h3 class="secondary-header" id="nav-underline-tabs">Underline Tabs</h3>
+
+<p>For underline tabs there are two versions. One is for mix of use of icons and text (or just text). The other one is for icons only.</p>
+
+<p>The example below shows you a set of tabs with only text.</p>
+
+<div ng-include="'underline-tabs1.html'" class="bs-example"></div>
+
+<div hljs include="'underline-tabs1.html'" language="html"></div>
+
+<p>The example below shows you tabs with icon and text.</p>
+
+<div ng-include="'underline-tabs2.html'" class="bs-example"></div>
+
+<div hljs include="'underline-tabs2.html'" language="html"></div>
+
+<p>The example below shows you the tabs with icons only. Note that it's using the CSS class <code>navbar-switch-icons</code> instead of <code>navbar-switch-default</code> to give more emphasis to the icons.</p>
+
+<div ng-include="'underline-tabs3.html'" class="bs-example"></div>
+
+<div hljs include="'underline-tabs3.html'" language="html"></div>
+
+
+<!-- Templates -->
+
+<script type="text/ng-template" id="browser-style-tabs.html">
+<ul class="nav nav-tabs">
+    <li class="active"><a href="#">Home</a></li>
+    <li><a href="#">Profile</a></li>
+    <li><a href="#">A Very Long Title for Tab</a></li>
+</ul>
+</script>
+
+<script type="text/ng-template" id="side-tabs.html">
+<div class="side-tabs-container">
+    <ul class="nav nav-side-tabs">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">A Very Long Title for Tab</a></li>
+    </ul>
+    <div class="tabs-contents" style="width: calc(100% - 140px)">
+        <div>
+            <h1><span class="icon-clock"></span>Welcome to side tabs presentation</h1>
+            <hr>
+            <p>We are presenting you the tab content.</p>
+            <h4>Side tabs</h4>
+            <p>Let me briefly talk about the styling for thie side tabs. First of all, side tabs have fixed width of 140px. The top and bottom padding are 20px. It has different state. When it is active, its background will become white-ish. Otherwise, it is gray-ish. If the text inside the tab is too long, it will be ellipsis(A very long Title for Tab -> A Very Long...). So beware of your wordings :)</p>
+            <h4>Tabs content</h4>
+            <p>So tabs content panel is totally customizable by users. You can set the color or texture whatever you want. For styling, it has padding of 40px to all four directions. Hopefully you are satisfied by that!</p>
+            <h4>Usage</h4>
+            <p>Usage for this styling is fairly simple! just simply grab the code below and you are done! If you wish to add your own contents into the content panel, simply paste your code into "tabs-contents" div.</p>
+            <h4>Interaction(Javascript)</h4>
+            <p>You might be wondering why clicking on side tabs is not working, that's because this presentation is only for styling! We do support javascript though! But you have to go visit ark-components: ui-bootstrap for more infomation. Note: that is for Angular-based application only!</p>
+            <h4>Support</h4>
+            <p>If you find a bug(hopefully not =p ), feel free to email Eric Lin for support. If you have a question regarding to the styling, feel free to email our awesome styling guy Steven Gans!</p>
+        </div>
+    </div>
+</div>
+</script>
+
+<script type="text/ng-template" id="underline-tabs1.html">
+<!-- Navbar switch -->
+<!-- In the navbar it should be either text or combination of text and Icon. -->
+<nav class="navbar navbar-switch-default" role="navigation">
+    <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Settings</a></li>
+    </ul>
+</nav>
+</script>
+
+<script type="text/ng-template" id="underline-tabs2.html">
+<!-- Navbar switch -->
+<!-- In the navbar it should be either text or combination of text and Icon. -->
+<nav class="navbar navbar-switch-default" role="navigation">
+    <ul class="nav navbar-nav">
+        <li class="active"><a href="#"><span class="icon-agent-ready"></span>Agent Ready!</a></li>
+        <li><a href="#"><span class="icon-agent-ready-partial"></span>Agent Partially Ready</a></li>
+        <li><a href="#"><span class="icon-agent-offline"></span>Agent Offline</a></li>
+    </ul>
+</nav>
+</script>
+
+<script type="text/ng-template" id="underline-tabs3.html">
+<!-- Navbar switch -->
+<!-- If you only have icons, you should use this one instead -->
+<nav class="navbar navbar-switch-icons" role="navigation">
+    <ul class="nav navbar-nav">
+        <li class="active"><a href="#"><span class="icon-agent-ready"></span></a></li>
+        <li><a href="#"><span class="icon-agent-ready-partial"></span></a></li>
+        <li><a href="#"><span class="icon-agent-offline"></span></a></li>
+    </ul>
+</nav>
+</script>

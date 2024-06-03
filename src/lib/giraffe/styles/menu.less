@@ -1,0 +1,132 @@
+.g-menu {
+  position: absolute;
+  z-index: 2000;
+}
+.g-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.g-menu-align-left .g-menu-connector {
+  margin-left: 24px;
+}
+.g-menu-align-right .g-menu-connector {
+  margin-left: 178px;
+}
+.g-menu .g-menu-panel {
+  background-color: @genesys-off-white;
+  color: @genesys-grey2;
+  padding: 8px 0 8px 0;
+  border: 1px solid #d1dae5;
+  //box-shadow: 0px 0px 2px 0px rgba(34,37,41,0.48);
+  box-shadow: 0px 1px 0px 0px rgba(34, 37, 41, 0.4);
+}
+.g-menu-connector:before {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-color: #d1dae5 transparent;
+  top: -6px;
+  border-width: 0 6px 6px;
+}
+.g-menu-connector:after {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-color: @brand-primary transparent;
+  top: -5px;
+  border-width: 0 6px 6px;
+}
+.g-menu-separator {
+  border-top: 1px #d1dae5 solid;
+  border-top-color: #d1dae5;
+  margin: 5px 24px 0 24px;
+}
+.g-menu-item {
+  /* note that line-height is supposed to be 32px */
+  /* user normal and padding to achieve 32px*/
+  line-height: 13px;
+  height: 13px;
+}
+li.g-menu-item {
+  padding: 0px;
+  display: inline-block;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 9px;
+}
+li.g-menu-item.g-menu-child {
+  cursor: pointer;
+}
+li.g-menu-child:hover {
+  background: @genesys-dark-blue;
+}
+li.g-menu-child:hover a,
+li.g-menu-child:hover label {
+  color: @genesys-off-white;
+}
+li.g-menu-category {
+  padding-bottom: 0;
+}
+li.g-menu-category:hover {
+  background: @genesys-off-white;
+}
+.g-menu-panel .g-menu-item a {
+  color: @genesys-grey2;
+  display: block;
+  height: 14px;
+}
+.g-menu-panel .g-menu-item > label {
+  display: block;
+  padding-left: 24px;
+  padding-right: 24px;
+  line-height: 13px;
+  cursor: pointer;
+}
+.g-menu-item.g-menu-category > h5 {
+  display: block;
+  margin: 0px 24px 0 24px;
+  padding: 8px 0 0 0;
+  font-weight: bold;
+  border-bottom: 1px solid #d1dae5;
+}
+.g-menu-item a:hover {
+  text-decoration: none;
+}
+.g-menu-item-disabled label {
+  opacity: 0.5;
+}
+.g-menu-item-selectable input {
+  margin: 0px 10px 0px 17px;
+  padding-top: 0px;
+}
+.g-menu-item-selectable input,
+.g-menu-item-selectable label {
+  cursor: pointer;
+}
+.g-menu-item-disabled input,
+.g-menu-item-disabled label {
+  cursor: default;
+}
+.g-menu-item-selectable input {
+  visibility: visible;
+  vertical-align: middle;
+  float: left;
+  position: absolute;
+}
+.g-menu-item-selectable label {
+  color: @genesys-grey2;
+  vertical-align: middle;
+  margin-left: 20px;
+}
+.g-menu-item-selected label {
+  font-weight: bold;
+}
+.g-menu-item-selected.g-menu-item-selectable label {
+  font-weight: normal;
+}
+.g-menu-item-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

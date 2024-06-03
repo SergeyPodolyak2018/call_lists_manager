@@ -1,0 +1,159 @@
+/*.field-ranges {
+    overflow: visible;
+}*/
+.g-ranges-body-noselect {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.g-ranges-border {
+  clear: left;
+}
+.g-ranges-ticks {
+  clear: left;
+  margin-top: 0px;
+}
+.g-ranges-tick {
+  font-size: 10px;
+  display: inline-block;
+  padding-bottom: 4px;
+  background: transparent url(i/tick.png) 50% 100% no-repeat;
+  position: relative;
+}
+.g-ranges-tick-first {
+  background-position: 0 100%;
+}
+.g-ranges-tick-last {
+  text-align: right;
+  background-position: 100% 100%;
+}
+.g-ranges-bars {
+  height: 19px;
+  overflow: hidden;
+}
+.g-ranges-placeholder {
+  padding: 0 2px;
+  line-height: 19px;
+  color: #969696;
+  cursor: default;
+  /* todo: reuse noselect class */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.g-ranges-bar {
+  height: 19px;
+  position: relative;
+  background: #aaa;
+  cursor: pointer;
+  transition-property: background-color;
+  -webkit-transition-property: background-color;
+  transition-duration: 250ms;
+  -webkit-transition-duration: 250ms;
+}
+.g-ranges-bar-highlight {
+  transition-property: none;
+  -webkit-transition-property: none;
+}
+.g-ranges-bar:hover {
+  background: #559ba9 !important;
+}
+.g-ranges-bars-dragging .g-ranges-bar:hover {
+  background: #aaa !important;
+}
+.g-ranges-bar.g-ranges-bar-marker,
+.g-ranges-bar:hover.g-ranges-bar-marker {
+  background: #008da9 url(i/marker_bg.png) 50% 50% repeat-x !important;
+  cursor: default;
+}
+.g-ranges-bar.g-ranges-bar-eraser,
+.g-ranges-bar:hover.g-ranges-bar-eraser {
+  background: #fdd url(i/eraser_bg.png) 50% 50% repeat-x !important;
+}
+.g-ranges-bar-selected {
+  background: #008da9;
+  z-index: 2;
+}
+.g-ranges-tooltip {
+  background: #f0f0f0;
+  position: absolute;
+  /*display: inline-block;*/
+  font-size: 10px;
+  border: 1px solid #888;
+  padding: 1px 2px;
+  box-shadow: rgba(0, 0, 0, 0.097) 0 1px 1px 0;
+  z-index: 2;
+  white-space: nowrap;
+}
+.g-ranges-draghandles {
+  height: 20px;
+  border: 1px solid transparent;
+}
+.g-ranges-draghandle {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  z-index: 1;
+}
+.g-ranges-draghandle-connector {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  transition-property: border-color;
+  -webkit-transition-property: border-color;
+  transition-duration: 250ms;
+  -webkit-transition-duration: 250ms;
+}
+.g-ranges-draghandle-start .g-ranges-draghandle-connector {
+  border-width: 0 0 10px 10px;
+  border-color: transparent transparent #666 transparent;
+}
+.g-ranges-draghandle-end .g-ranges-draghandle-connector {
+  border-width: 10px 0 0 10px;
+  border-color: transparent transparent transparent #666;
+}
+.g-ranges-draghandle-body {
+  width: 10px;
+  height: 11px;
+  background: #666;
+  transition-property: background-color;
+  -webkit-transition-property: background-color;
+  transition-duration: 250ms;
+  -webkit-transition-duration: 250ms;
+}
+.g-ranges-draghandle-start:hover .g-ranges-draghandle-connector {
+  border-color: transparent transparent #559ba9 transparent;
+}
+.g-ranges-draghandle-start.ui-draggable-dragging .g-ranges-draghandle-connector {
+  border-color: transparent transparent #008da9 transparent;
+}
+.g-ranges-draghandle-end:hover .g-ranges-draghandle-connector {
+  border-color: transparent transparent transparent #559ba9;
+}
+.g-ranges-draghandle-end.ui-draggable-dragging .g-ranges-draghandle-connector {
+  border-color: transparent transparent transparent #008da9;
+}
+.g-ranges-draghandle:hover .g-ranges-draghandle-body {
+  background: #559ba9;
+}
+.ui-draggable-dragging .g-ranges-draghandle-body {
+  background: #008da9 !important;
+}
+.g-field-disabled .g-ranges-draghandle {
+  display: none;
+}
+.g-field-disabled .g-ranges-bar {
+  background: #aaa;
+  cursor: default;
+}
+.g-field-disabled .g-ranges-bar:hover {
+  background: #aaa !important;
+}
+.g-field-disabled .g-ranges-ticks {
+  color: #888;
+}
+.g-field-disabled .g-ranges-bars {
+  background: #f8f8f8;
+}

@@ -1,0 +1,65 @@
+<p class="lead">Get the lowdown on the key pieces of Ark's infrastructure, including our approach to better, faster, stronger web development.</p>
+
+
+<h3 class="secondary-header" id="overview-doctype">HTML5 doctype</h3>
+
+<p>Ark makes use of certain HTML elements and CSS properties that require the use of the HTML5 doctype. Include it at the beginning of all your projects.</p>
+
+<div class="highlight" hljs include="'overview-html5-doctype.html'" language="html"></div>
+
+<div class="highlight" hljs include="'overview-viewport1.html'" language="html"></div>
+
+<p>You can disable zooming capabilities on mobile devices by adding <code>user-scalable=no</code> to the viewport meta tag. This disables zooming, meaning users are only able to scroll, and results in your site feeling a bit more like a native application. Overall, we don't recommend this on every site, so use caution!</p>
+
+<div class="highlight" hljs include="'overview-viewport2.html'" language="html"></div>
+
+
+<h3 class="secondary-header" id="overview-type-links">Typography and links</h3>
+
+<p>Ark sets basic global display, typography, and link styles. Specifically, we:</p>
+
+<ul>
+  <li>Set <code>background-color: #fff;</code> on the <code>body</code></li>
+  <li>Use the <code>@font-family-base</code>, <code>@font-size-base</code>, and <code>@line-height-base</code> attributes as our typographic base</li>
+  <li>Set the global link color via <code>@link-color</code> and apply link underlines only on <code>:hover</code></li>
+</ul>
+
+<p>These styles can be found within <code>scaffolding.less</code>.</p>
+
+
+<h3 class="secondary-header" id="overview-normalize">Normalize.css</h3>
+
+<p>For improved cross-browser rendering, we use <a href="http://necolas.github.io/normalize.css/" target="_blank">Normalize.css</a>, a project by <a href="http://twitter.com/necolas" target="_blank">Nicolas Gallagher</a> and <a href="http://twitter.com/jon_neal" target="_blank">Jonathan Neal</a>.</p>
+
+
+<h3 class="secondary-header" id="overview-container">Containers</h3>
+
+<p>Easily center a page's contents by wrapping its contents in a <code>.container</code>. Containers set <code>width</code> at various media query breakpoints to match our grid system.</p>
+
+<p>Note that, due to <code>padding</code> and fixed widths, containers are not nestable by default.</p>
+
+<div class="highlight" hljs include="'overview-container.html'" language="html"></div>
+
+
+<!-- Templates -->
+
+<script type="text/ng-template" id="overview-html5-doctype.html">
+<!DOCTYPE html>
+<html lang="en">
+    ...
+</html>
+</script>
+
+<script type="text/ng-template" id="overview-viewport1.html">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</script>
+
+<script type="text/ng-template" id="overview-viewport2.html">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+</script>
+
+<script type="text/ng-template" id="overview-container.html">
+<div class="container">
+    ...
+</div>
+</script>

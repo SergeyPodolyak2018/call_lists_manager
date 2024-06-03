@@ -1,0 +1,13 @@
+@import '../../../styles/font_style.scss';
+.body {
+  overflow-y: scroll;
+  padding: 15px;
+  @include standart12x16x400;
+  display: grid;
+  grid-template-columns: 150px auto;
+  grid-auto-rows: 20px;
+}
+.name {
+  display: flex;
+  align-items: center;
+}

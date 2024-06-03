@@ -1,0 +1,18 @@
+@import '../../../styles/font_style.scss';
+@import '../../../styles/color.scss';
+.container {
+  gap: 10px;
+  min-width: 300px;
+  height: 40px;
+  background-color: transparent;
+  border-style: solid;
+  border-color: transparent;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.dropDownContainer {
+  width: 200px;
+  height: 32px;
+}

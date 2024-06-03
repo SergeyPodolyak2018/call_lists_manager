@@ -1,0 +1,29 @@
+{
+  "title": "Iconography",
+  "description": "Custom made beautiful icons for all Genesys needs.",
+  "sections": [
+    {
+      "id": "fonticons",
+      "title": "Fonticons",
+      "template": "partials/icons/fonticons.html",
+      "subSections": [
+        {
+          "id": "fonticons-glyphs",
+          "title": "Available Icons"
+        },
+        {
+          "id": "fonticons-how-to-use",
+          "title": "How to use the icons"
+        },
+        {
+          "id": "fonticons-accessability",
+          "title": "Accessibility"
+        },
+        {
+          "id": "fonticons-icon-base-sizes",
+          "title": "Icon Base Sizes and Scalability"
+        }
+      ]
+    }
+  ]
+}

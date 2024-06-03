@@ -1,0 +1,284 @@
+<p class="lead">The Genesys typeface is Roboto, typically used in only three weights; Regular, Bold and Light.</p>
+
+<p>Type should be set in the following sizes and corresponding weights:</p>
+
+<table class="table table-default">
+  <thead>
+    <tr>
+      <th>Kind</th>
+      <th>Size</th>
+      <th>Line Height</th>
+      <th>HTML Tag</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p class="small-body">Small Body Copy</p></td>
+      <td>11px</td>
+      <td>16px</td>
+      <td><code>p class="small-body"</code></td>
+    </tr>
+    <tr>
+      <td><p>Body Copy</p></td>
+      <td>12px</td>
+      <td>20px</td>
+      <td><code>p</code></td>
+    </tr>
+    <tr>
+      <td><p class="large-body">Large Body Copy</p></td>
+      <td>14px</td>
+      <td>24px</td>
+      <td><code>p class="large-body"</code></td>
+    </tr>
+    <tr>
+      <td><h5>h5 Title</h5></td>
+      <td>12px</td>
+      <td>20px</td>
+      <td><code>h5</code></td>
+    </tr>
+    <tr>
+      <td><h4>h4 Title</h4></td>
+      <td>14px</td>
+      <td>20px</td>
+      <td><code>h4</code></td>
+    </tr>
+    <tr>
+      <td><h3>h3 Subhead</h3></td>
+      <td>14px</td>
+      <td>20px</td>
+      <td><code>h3</code></td>
+    </tr>
+    <tr>
+      <td><h2 style="margin: 0;">h2 Small Title</h2></td>
+      <td>18px</td>
+      <td>24px</td>
+      <td><code>h2</code></td>
+    </tr>
+    <tr>
+      <td><h1 style="margin-top: 0px; margin-bottom: 0px;">h1 Large Title</h1></td>
+      <td>24px</td>
+      <td>32px</td>
+      <td><code>h1</code></td>
+    </tr>
+    <tr>
+      <td><label>Label</label> <em>(only to used in forms)</em></td>
+      <td>12px</td>
+      <td>16px</td>
+      <td><code>label</code></td>
+    </tr>
+  </tbody>
+</table>
+
+
+<h3 class="secondary-header" id="type-headings">Headings</h3>
+
+<p>All HTML headings, <code>&lt;h1&gt;</code> through <code>&lt;h6&gt;</code>, are available. <code>.h1</code> through <code>.h6</code> classes are also available, for when you want to match the font styling of a heading but still want your text to be displayed inline.</p>
+
+<div class="bs-example bs-example-type">
+  <div ng-include="'typography-heading1.html'"></div>
+</div>
+
+<div hljs include="'typography-heading1.html'" language="html"></div>
+
+<p>Create lighter, secondary text in any heading with a generic <code>&lt;small&gt;</code> tag or the <code>.small</code> class.</p>
+
+<div class="bs-example bs-example-type">
+  <div ng-include="'typography-heading2.html'"></div>
+</div>
+
+<div hljs include="'typography-heading2.html'" language="html"></div>
+
+<p>There is also a Primary and Secondary Headings that can be used.</p>
+
+<div class="bs-example bs-example-type">
+  <div ng-include="'typography-heading3.html'"></div>
+</div>
+
+<div hljs include="'typography-heading3.html'" language="html"></div>
+
+
+<h3 class="secondary-header" id="type-body-copy">Normal Body copy</h3>
+
+<p>Ark's global default <code>font-size</code> is <strong>12px</strong>, with a <code>line-height</code> of <strong>1.66667</strong> or <strong>20 px</strong>. This is applied to the <code>&lt;body&gt;</code> and all paragraphs. In addition, <code>&lt;p&gt;</code> (paragraphs) receive a bottom margin of half their computed line-height (10px by default).</p>
+
+<div class="bs-example">
+  <p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
+  <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.</p>
+  <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+</div>
+
+<div hljs language="html">
+<p>...</p>
+</div>
+
+<h4>Small Body Copy</h4>
+
+<p>Use <code>.small-body</code> to display text in a larger size inside a paragraph than the default body size. This uses a <code>font-size</code> of <strong>11px</strong> and a <code>line-height</code> of <strong>16px</strong>.</p>
+
+<div class="bs-example">
+  <p class="small-body">This is a paragraph that uses a small body text with a regular weight.</p>
+  <p class="small-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <p class="small-body">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
+
+<div hljs language="html">
+<p class="small-body">...</p>
+</div>
+
+<h4>Large Body Copy</h4>
+
+<p>Use <code>.large-body</code> to display text in a larger size inside a paragraph than the default body size. This uses a <code>font-size</code> of <strong>14px</strong> and a <code>line-height</code> of <strong>24px</strong>.</p>
+
+<div class="bs-example">
+  <p class="large-body">This is a paragraph that uses a large body text with a regular weight.</p>
+  <p class="large-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <p class="large-body">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
+
+<div hljs language="html">
+<p class="large-body">...</p>
+</div>
+
+
+<h3 class="secondary-header" id="type-labels">Labels</h2>
+
+<p>Ark's labels are specifed as having a <code>font-size</code> of <strong>12px</strong> and with a <code>line-height</code> of <strong>16px</strong>.</p>
+
+<div ng-include="'typography-label1.html'" class="bs-example"></div>
+
+<div hljs include="'typography-label1.html'" language="html"></div>
+
+<div ng-include="'typography-label2.html'" class="bs-example"></div>
+
+<div hljs include="'typography-label2.html'" language="html"></div>
+
+
+<h3 class="secondary-header" id="type-text-selection">Text Selection</h2>
+
+<h4>Normal Mode</h4>
+
+<p>Ark's global default <code>color</code> for selected text is <code>@genesys-grey2</code> or <code>#444A52</code>.  The global default <code>background-color</code> for selected text is <code>@genesys-blue</code> or <code>#5E99FF, 30%</code>.</p>
+
+<div class="bs-example">
+  <p>This is normal unselected text.</p>
+  <p class="normal-mode-selected-text">This is what normal text looks like when selected.</p>
+  <p>When this paragraph is selected, it looks like the previous one.</p>
+</div>
+
+<div hljs language="html">
+<p>...</p>
+</div>
+
+<h4>Select Mode</h4>
+
+<p>When Select Mode is in use, the CSS class <code>select-mode</code> must be specified in the enclosing HTML element.</p>
+
+<p>The default <code>color</code> for selected text is <code>@genesys-off-white</code> or <code>#FDFDFD</code>.  The global default <code>background-color</code> for selected text is <code>#666F7B</code>.</p>
+
+<div class="bs-example">
+  <div class="select-mode">
+    <p>This is unselected text in select mode.</p>
+    <p class="select-mode-selected-text">This is what text looks like when selected in select mode.</p>
+    <p>When this paragraph is selected, it looks like the previous one.</p>
+  </div>
+</div>
+
+<div hljs language="html">
+<div class="select-mode">
+    <p>This is unselected text in select mode.</p>
+    ...
+</div>
+</div>
+
+
+<h3 class="secondary-header" id="type-emphasis">Emphasis</h3>
+
+<p>Make use of HTML's default emphasis tags with lightweight styles.</p>
+
+<!--
+<h4>Small text</h3>
+
+<p>For de-emphasizing inline or blocks of text, use the <code>&lt;small&gt;</code> tag to set text at 85% the size of the parent. Heading elements receive their own <code>font-size</code> for nested <code>&lt;small&gt;</code> elements.</p>
+
+<p>You may alternatively use an inline element with <code>.small</code> in place of any <code>&lt;small&gt;</code>.</p>
+
+<div class="bs-example">
+  <p><small>This line of text is meant to be treated as fine print.</small></p>
+</div>
+
+<div hljs language="html">
+<small>This line of text is meant to be treated as fine print.</small>
+</div>
+-->
+
+<h4>Bold</h4>
+
+<p>For emphasizing a snippet of text with a heavier font-weight.</p>
+
+<div class="bs-example">
+  <p>The following snippet of text is <strong>rendered as bold text</strong>.</p>
+</div>
+
+<div hljs language="html">
+<strong>rendered as bold text</strong>
+</div>
+
+<h4>Italics</h4>
+
+<p>For emphasizing a snippet of text with italics.</p>
+
+<div class="bs-example">
+  <p>The following snippet of text is <em>rendered as italicized text</em>.</p>
+</div>
+
+<div hljs language="html">
+<em>rendered as italicized text</em>
+</div>
+
+<div class="bs-callout bs-callout-info">
+  <h4>Alternate elements</h4>
+  <p>Feel free to use <code>&lt;b&gt;</code> and <code>&lt;i&gt;</code> in HTML5. <code>&lt;b&gt;</code> is meant to highlight words or phrases without conveying additional importance while <code>&lt;i&gt;</code> is mostly for voice, technical terms, etc.</p>
+</div>
+
+<h4>Alignment classes</h4>
+
+<p>Easily realign text to components with text alignment classes.</p>
+
+<div ng-include="'typography-alignment.html'" class="bs-example"></div>
+
+<div hljs include="'typography-alignment.html'" language="html"></div>
+
+
+<!-- Templates -->
+
+<script type="text/ng-template" id="typography-heading1.html">
+<h1>h1. Ark Heading</h1>
+<h2>h2. Ark Heading</h2>
+<h3>h3. Ark Heading</h3>
+</script>
+
+<script type="text/ng-template" id="typography-heading2.html">
+<h1>h1. Ark Heading <small>Secondary text</small></h1>
+<h2>h2. Ark Heading <small>Secondary text</small></h2>
+<h3>h3. Ark Heading <small>Secondary text</small></h3>
+</script>
+
+<script type="text/ng-template" id="typography-heading3.html">
+<h1 class="primary-header">Primary Header</h1>
+<h2 class="secondary-header">Secondary Header</h2>
+</script>
+
+<script type="text/ng-template" id="typography-label1.html">
+<label>Label</label>
+</script>
+
+<script type="text/ng-template" id="typography-label2.html">
+<span class="label">Label</span>
+</script>
+
+<script type="text/ng-template" id="typography-alignment.html">
+<p class="text-left">Left aligned text.</p>
+<p class="text-center">Center aligned text.</p>
+<p class="text-right">Right aligned text.</p>
+<p class="text-justify">Justified text.</p>
+</script>

@@ -1,0 +1,40 @@
+@import '../../styles/color.scss';
+@import '../../styles/font_style.scss';
+.noInputTime {
+  background: none;
+  border: none;
+  pointer-events: none;
+  width: 120%;
+  margin-right: -26px;
+}
+.data_wrapper {
+  position: relative;
+  width: 100%;
+  & .id {
+    display: none;
+  }
+  & .info {
+    position: absolute;
+    z-index: 500;
+    right: 0;
+    top: 50%;
+    width: 10px;
+    height: 10px;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    color: $blue-2;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    @include standart20x16x400;
+    background-color: white;
+  }
+  &:hover {
+    & .name {
+      display: none;
+    }
+    & .id {
+      display: inline-block;
+    }
+  }
+}

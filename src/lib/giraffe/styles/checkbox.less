@@ -1,0 +1,45 @@
+.g-field-checkbox input {
+  position: absolute;
+  z-index: -1;
+  display: none;
+}
+.g-checkbox-img {
+  background: url(i/checkbox-radio.png) no-repeat;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  vertical-align: middle;
+  float: left;
+}
+.g-checkbox-img {
+  background-position: 0px 0;
+}
+.g-checkbox-focused .g-checkbox-img {
+  background-position: -16px 0;
+}
+.g-field-disabled .g-checkbox-img {
+  background-position: -32px 0;
+  opacity: 0.4;
+}
+.g-checkbox-checked .g-checkbox-img {
+  background-position: -64px 0;
+}
+.g-checkbox-focused.g-checkbox-checked .g-checkbox-img {
+  background-position: -80px 0;
+}
+.g-field-disabled .g-checkbox-checked .g-checkbox-img {
+  background-position: -96px 0;
+  opacity: 0.4;
+}
+
+.g-field-checkbox label {
+  font-weight: bold;
+  display: block;
+  cursor: pointer;
+  margin: 0 0 0 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.g-field-checkbox.g-field-disabled input {
+  cursor: default !important;
+}

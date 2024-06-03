@@ -1,0 +1,89 @@
+<p class="lead">
+    This is the styling for the Modals component implemented in Ark UI Bootstrap,
+    there is no functionality (open and close modals) on these.
+</p>
+
+
+<h3 class="secondary-header" id="modals-sm">Small Modals</h3>
+
+<div ng-include="'modal-sm.html'" class="bs-example"></div>
+
+<div hljs include="'modal-sm.html'" language="html"></div>
+
+
+<h3 class="secondary-header" id="modals-md">Medium Modals</h3>
+
+<div ng-include="'modal-md.html'" class="bs-example"></div>
+
+<div hljs include="'modal-md.html'" language="html"></div>
+
+
+<h3 class="secondary-header" id="modals-lg">Large Modals</h3>
+
+<div ng-include="'modal-lg.html'" class="bs-example"></div>
+
+<div hljs include="'modal-lg.html'" language="html"></div>
+
+
+<!-- Templates -->
+
+<script type="text/ng-template" id="modal-sm.html">
+<div class="modal-dialog modal-sm">
+    <div class="modal-content">
+        <span class="icon-close close modal-dialog-close"></span>
+        <div class="modal-header">
+            <h1 class="modal-title">Modal Heading</h1>
+        </div>
+        <div class="modal-body">
+            This is an example of a simple modal.
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default">Close</button>
+        </div>
+    </div>
+</div>
+</script>
+
+<script type="text/ng-template" id="modal-md.html">
+<div class="modal-dialog modal-md">
+    <div class="modal-content">
+        <span class="icon-close close modal-dialog-close"></span>
+        <div class="modal-header">
+            <h1 class="modal-title">Modal Heading</h1>
+        </div>
+        <div class="modal-body">
+            This is an example of a simple modal.
+            <h2>H2 Title</h2>
+            <p>Something something</p>
+            <h4>H4 Title</h4>
+            <p>Something else</p>
+            <!-- Note: for title in modal-body, if it is long use h2 tag, else use h4 tag.
+            This will give you a better visual presentation-->
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+            <button type="button" class="btn btn-danger">Discard changes</button>
+        </div>
+    </div>
+</div>
+</script>
+
+<script type="text/ng-template" id="modal-lg.html">
+<div class="modal-dialog modal-lg">
+    <div class="modal-content">
+        <span class="icon-close close modal-dialog-close"></span>
+        <div class="modal-header">
+            <h1 class="modal-title">Modal Heading</h1>
+        </div>
+        <div class="modal-body">
+            This is an example of a simple modal.
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+            <button type="button" class="btn btn-danger">Discard changes</button>
+        </div>
+    </div>
+</div>
+</script>

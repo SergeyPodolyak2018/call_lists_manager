@@ -1,0 +1,45 @@
+@import '../../../styles/font_style.scss';
+@import '../../../styles/color.scss';
+.container {
+  width: 100%;
+  background-color: $tableBaground;
+  border-style: solid;
+  border-width: 1px;
+  border-color: $tableBorder;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  &_target {
+    width: 200px;
+    height: 32px;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+  }
+  &_search {
+    width: 400px;
+    height: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  &_subContainer {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  &_buttonsContainer {
+    display: flex;
+    flex-direction: row;
+  }
+  &_totalCampaignsLabel {
+    margin-left: 15px;
+    padding: 6px;
+    font-weight: 600;
+  }
+  &_selectServerContainer {
+    margin-left: 15px;
+    display: inline-flex;
+    flex: 1;
+    justify-content: center;
+  }
+}

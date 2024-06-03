@@ -1,0 +1,25 @@
+{
+  "title": "Dev Only",
+  "description": "These are for speeding up development.",
+  "sections": [
+    {
+      "id": "modals",
+      "title": "Modals",
+      "template": "partials/dev-only/modals.html",
+      "subSections": [
+        {
+          "id": "modals-sm",
+          "title": "Small Modals"
+        },
+        {
+          "id": "modals-md",
+          "title": "Medium Modals"
+        },
+        {
+          "id": "modals-lg",
+          "title": "Large Modals"
+        }
+      ]
+    }
+  ]
+}

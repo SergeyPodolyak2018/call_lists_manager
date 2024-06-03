@@ -1,0 +1,53 @@
+<h3 class="secondary-header">Login CSS Demo</h3>
+
+<p>Create a login form within a <code>div</code> with the <code>ark-login</code> class to have it styled as below.</p>
+
+<p>Don't forget to use <code>autocomplete="off"</code> in your password fields and any other fields that is used for providing confidential information.</p>
+
+<div class="bs-callout bs-callout-warning">
+  <h4>Ark Login Component (Angular-based)</h4>
+  <p>The Ark Login is also available as a fully functional Ark Component. Use the Ark component for a wide variety of options and features.</p>
+</div>
+
+<div ng-include="'login-form.html'" class="bs-example"></div>
+
+<div hljs include="'login-form.html'" language="html"></div>
+
+<!-- Templates -->
+
+<script type="text/ng-template" id="login-form.html">
+<div class="ark-login">
+    <div class="wrapper">
+        <div class="branding">
+            <img alt="Genesys Logo" />
+        </div>
+
+        <div class="well">
+            <form role="form">
+                <div class="form-group">
+                    <h2>Welcome to Genesys</h2>
+                    <div class="ark-login-fields">
+                        <input type="text"
+                          class="form-control ark-login-username"
+                          placeholder="Username" />
+                        <input type="password"
+                          class="form-control ark-login-password"
+                          placeholder="Password"
+                          autocomplete="off" />
+                    </div>
+                    <div class="error-container">
+                        <span class="icon-alert-circle"> </span>
+                        <div class="ark-login-error-messages">Example not functional</div>
+                    </div>
+                    <div class="ark-login-button">
+                        <button class="btn btn-primary btn-block">Log In</button>
+                    </div>
+                    <div class="ark-login-forgot-password">
+                        <a href="#">Forgot your password?</a>
+                    </div>
+                </div>
+            </form>
+        </div><!-- well -->
+    </div><!-- container -->
+</div><!-- login -->
+</script>

@@ -1,0 +1,42 @@
+@import '../../../styles/color';
+.wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  position: relative;
+
+  &First {
+    background-color: $white;
+  }
+}
+.dotContainer {
+  width: 100%;
+  height: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 1;
+  gap: 10px;
+  background-color: aliceblue;
+  &:hover {
+    cursor: row-resize;
+  }
+}
+
+.dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: $grey;
+}
+
+.hiden {
+  opacity: 0.1;
+}

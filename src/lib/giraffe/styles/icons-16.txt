@@ -1,0 +1,29 @@
+# Go to http://jsfiddle.net/WeYRS/3/
+# Set size to 16
+# Set prefix to .icon-
+# Paste the following:
+
+#jqui
+#jqui
+#jqui
+#jqui
+#jqui
+#jqui
+#jqui
+#jqui
+#jqui
+#jqui
+#jqui
+#jqui
+#jqui
+#jqui
+#jqui
+#padding
+#padding
+#padding
+personality1, personality2, _genericgroup, _skill1, _skill2, skill3, place1, _place2, agent1, _agent2, dn, roles, closelarge, chevron-right, chevron-left, trashlarge, group, group-disabled, triangle-right, triangle-left, triangle-up, triangle-down
+_ip, capacityrule, _businessunit, _reporting, settings, edit, _usergroup1, usergroup2, agentgroup, linux, windows, _plugin, columns, restore, maximize, info, waves, waves-disabled, stop, alert, check-circle
+folderclosed, folderopen, tenant1, tenant2, _useraccount1, _useraccount2, accessgroup1, _accessgroup2, host, audiofile, user1, _user2, _user3, close-circle, plus-circle, reset, calendar, calendar-disabled, info-circle2, cross-circle2, check-circle2
+parameter, parametergroup, parametertemplate, exit, script, panel, twist, _cube, _personinhouse, hpux, solaris, aix, tree, list, arrow-up, arrow-down, cube, cube-disabled, slider-vertical, slider-horizontal
+clone, magnify, presentation, audio, audio-disabled, calculator, notebook, briefcase, magnify, zoom-in, zoom-out, presentation2, arrow-up-stop, arrow-down-stop, filter, printer, building, building-disabled, square, square-minus
+alert, check, sound, cross-thick, cross, plus-thick, plus, chevron, refresh, arrow-right-circle, arrow-left-circle, arrow-up-circle, arrow-down-circle, empty, shuffle, shuffle-disabled, shapes, shapes-disabled

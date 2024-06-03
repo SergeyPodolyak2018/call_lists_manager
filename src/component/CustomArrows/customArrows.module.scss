@@ -1,0 +1,19 @@
+.customArrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15px;
+  max-height: 10px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.up {
+  transform: rotate(180deg);
+}
+
+.arrowsHolder {
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+}
